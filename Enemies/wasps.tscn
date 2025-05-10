@@ -1,0 +1,131 @@
+[gd_scene load_steps=24 format=3 uid="uid://dyve1fgt4u4m6"]
+
+[ext_resource type="Texture2D" uid="uid://cu1vojhunxlrh" path="res://assets/enemy-wasps/keyframes/__red_wasp_die_000.png" id="1_uf43f"]
+[ext_resource type="Texture2D" uid="uid://b5g1vswphlew7" path="res://assets/enemy-wasps/keyframes/__red_wasp_die_001.png" id="2_ucw4q"]
+[ext_resource type="Texture2D" uid="uid://3o18yrqe8ttq" path="res://assets/enemy-wasps/keyframes/__red_wasp_die_002.png" id="3_dkxu8"]
+[ext_resource type="Texture2D" uid="uid://b7xd6hkmc5cqi" path="res://assets/enemy-wasps/keyframes/__red_wasp_die_003.png" id="4_2rb4y"]
+[ext_resource type="Texture2D" uid="uid://cxwpjrkxrkoef" path="res://assets/enemy-wasps/keyframes/__red_wasp_die_004.png" id="5_gm1vf"]
+[ext_resource type="Texture2D" uid="uid://bpt26yrv7i1h5" path="res://assets/enemy-wasps/keyframes/__red_wasp_dive_pose_000.png" id="6_u6lcq"]
+[ext_resource type="Texture2D" uid="uid://c8hduk0c2oyiv" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_000.png" id="7_wigsd"]
+[ext_resource type="Texture2D" uid="uid://od2jdcdspcud" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_001.png" id="8_l3y8u"]
+[ext_resource type="Texture2D" uid="uid://b8lb63a6qv3rc" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_002.png" id="9_tsq7a"]
+[ext_resource type="Texture2D" uid="uid://vluvim65f6yx" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_003.png" id="10_xu302"]
+[ext_resource type="Texture2D" uid="uid://bd07q6tyd7avv" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_004.png" id="11_ou4my"]
+[ext_resource type="Texture2D" uid="uid://dahsll04t0odo" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_005.png" id="12_5ctbf"]
+[ext_resource type="Texture2D" uid="uid://ctr74tl5k18ej" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_006.png" id="13_vax5n"]
+[ext_resource type="Texture2D" uid="uid://dnmlfk7jwm4jo" path="res://assets/enemy-wasps/keyframes/__red_wasp_flying_007.png" id="14_3jdvo"]
+[ext_resource type="Texture2D" uid="uid://bccxsx2d7x46r" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_001.png" id="15_iac1q"]
+[ext_resource type="Texture2D" uid="uid://fm8ou0o251mq" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_002.png" id="16_rinfo"]
+[ext_resource type="Texture2D" uid="uid://dbiqfamdqr82p" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_003.png" id="17_r082k"]
+[ext_resource type="Texture2D" uid="uid://di5hwl0hdh6hv" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_004.png" id="18_2srso"]
+[ext_resource type="Texture2D" uid="uid://dudtajhgx62yl" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_005.png" id="19_4p6pd"]
+[ext_resource type="Texture2D" uid="uid://le3q814d2jgq" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_006.png" id="20_x60fg"]
+[ext_resource type="Texture2D" uid="uid://yaw7vl3nl08o" path="res://assets/enemy-wasps/keyframes/__red_wasp_sting_007.png" id="21_u0j5g"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nhnv1"]
+radius = 43.9994
+height = 91.9987
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j17lj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_uf43f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ucw4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dkxu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2rb4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gm1vf")
+}],
+"loop": true,
+"name": &"Die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_u6lcq")
+}],
+"loop": true,
+"name": &"Dive",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_wigsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_l3y8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tsq7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xu302")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ou4my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5ctbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vax5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3jdvo")
+}],
+"loop": true,
+"name": &"Flying",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_iac1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_iac1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rinfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_r082k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2srso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4p6pd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_x60fg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_u0j5g")
+}],
+"loop": true,
+"name": &"Sting",
+"speed": 5.0
+}]
+
+[node name="Wasps" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.57603
+shape = SubResource("CapsuleShape2D_nhnv1")
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7, -8)
+scale = Vector2(0.153005, 0.14011)
+sprite_frames = SubResource("SpriteFrames_j17lj")
+animation = &"Die"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

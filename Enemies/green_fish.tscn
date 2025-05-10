@@ -1,0 +1,145 @@
+[gd_scene load_steps=32 format=3 uid="uid://gerl3s4kqsvj"]
+
+[ext_resource type="Texture2D" uid="uid://qqucjxh762m4" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_000.png" id="1_1ihgq"]
+[ext_resource type="Script" path="res://Enemies/green_fish.gd" id="1_xo0am"]
+[ext_resource type="Texture2D" uid="uid://cgic2l67gjt0h" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_001.png" id="2_t0ryc"]
+[ext_resource type="Texture2D" uid="uid://bntfthpafjw26" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_002.png" id="3_jpxqu"]
+[ext_resource type="Texture2D" uid="uid://duaddtlyuq3jq" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_003.png" id="4_d4i1n"]
+[ext_resource type="Texture2D" uid="uid://dk0glv3e3eyb6" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_004.png" id="5_ny0eq"]
+[ext_resource type="Texture2D" uid="uid://c3ah5mxudcr55" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_005.png" id="6_v2coy"]
+[ext_resource type="Texture2D" uid="uid://c6amu2u5nkol4" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_006.png" id="7_cj8ti"]
+[ext_resource type="Texture2D" uid="uid://b4qhe74hugo2k" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_007.png" id="8_n01an"]
+[ext_resource type="Texture2D" uid="uid://clg1wjk7q3nqv" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_008.png" id="9_8fjr1"]
+[ext_resource type="Texture2D" uid="uid://c3nhgqy7exvu6" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_009.png" id="10_bslxi"]
+[ext_resource type="Texture2D" uid="uid://box1fuylttns" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_010.png" id="11_ugbaf"]
+[ext_resource type="Texture2D" uid="uid://g3okgfe0ouf6" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_011.png" id="12_fs4kc"]
+[ext_resource type="Texture2D" uid="uid://dfgl3ls38cqqq" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_012.png" id="13_62kpn"]
+[ext_resource type="Texture2D" uid="uid://c53pb6v5bfyoa" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_013.png" id="14_1ps52"]
+[ext_resource type="Texture2D" uid="uid://covxvaos0ktw7" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_014.png" id="15_7rt6f"]
+[ext_resource type="Texture2D" uid="uid://iy6apk6mhqjq" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_015.png" id="16_xaprd"]
+[ext_resource type="Texture2D" uid="uid://dho71hudyvhf1" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_016.png" id="17_k2e72"]
+[ext_resource type="Texture2D" uid="uid://cxo8m0tsh4eem" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_017.png" id="18_qu16d"]
+[ext_resource type="Texture2D" uid="uid://c6wj0bjfotjuu" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_018.png" id="19_eescl"]
+[ext_resource type="Texture2D" uid="uid://fs1mxw1ljxgk" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_019.png" id="20_wt32l"]
+[ext_resource type="Texture2D" uid="uid://0w11k4djmodl" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_000.png" id="21_yo6an"]
+[ext_resource type="Texture2D" uid="uid://do4oefommdsap" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_001.png" id="22_5ojii"]
+[ext_resource type="Texture2D" uid="uid://ccgv8wdyiitvr" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_002.png" id="23_41git"]
+[ext_resource type="Texture2D" uid="uid://c5vjjoqvpcly1" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_003.png" id="24_53upj"]
+[ext_resource type="Texture2D" uid="uid://td3btffmvgjy" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_004.png" id="25_okg8b"]
+[ext_resource type="Texture2D" uid="uid://b38oldi42i1j7" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_005.png" id="26_vhnwd"]
+[ext_resource type="Texture2D" uid="uid://bsru0kfxh3ghr" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_006.png" id="27_35dnj"]
+[ext_resource type="Texture2D" uid="uid://coft6n5u8jy8h" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_swim_inflated_007.png" id="28_taoya"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_067y0"]
+radius = 35.4683
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3yc23"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1ihgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_t0ryc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jpxqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d4i1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ny0eq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_v2coy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cj8ti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_n01an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8fjr1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bslxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ugbaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fs4kc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_62kpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1ps52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7rt6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xaprd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_k2e72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qu16d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_eescl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wt32l")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_yo6an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5ojii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_41git")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_53upj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_okg8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vhnwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_35dnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_taoya")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 5.0
+}]
+
+[node name="green_fish" type="CharacterBody2D"]
+position = Vector2(330, 281)
+script = ExtResource("1_xo0am")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_067y0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -5)
+scale = Vector2(0.154574, 0.154574)
+sprite_frames = SubResource("SpriteFrames_3yc23")
+animation = &"idle"

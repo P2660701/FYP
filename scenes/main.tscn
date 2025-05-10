@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://xne5c4ikmf32"]
+
+[ext_resource type="Texture2D" uid="uid://bbci4ycp1ty1q" path="res://pngs/background_creation_items/background.png" id="1_4b7nf"]
+[ext_resource type="Texture2D" uid="uid://ce4v401r4tlix" path="res://assets/FreeUi/FreeUi/ClassicalButtons.png" id="1_bs58v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_san1o"]
+atlas = ExtResource("1_bs58v")
+region = Rect2(1, 1, 14, 14)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd81f"]
+atlas = ExtResource("1_bs58v")
+region = Rect2(1, 1, 14, 14)
+filter_clip = true
+
+[node name="Landing Page" type="Node2D"]
+position = Vector2(83, -46)
+scale = Vector2(0.904649, 0.904649)
+
+[node name="Acknowledgements" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 698.613
+offset_top = 981.596
+offset_right = 858.613
+offset_bottom = 1012.6
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.47904, 3.47904)
+text = "Acknowledgements
+"
+icon = SubResource("AtlasTexture_san1o")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Start" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 852.264
+offset_top = 655.503
+offset_right = 926.264
+offset_bottom = 715.503
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(3.25, 3.25)
+text = "Start"
+icon = SubResource("AtlasTexture_jd81f")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Sprite2D" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Sprite2D"]
+motion_scale = Vector2(0, 0)
+
+[node name="Background" type="Sprite2D" parent="Sprite2D/ParallaxLayer"]
+position = Vector2(1000.38, 772)
+scale = Vector2(1.38108, 1.42963)
+texture = ExtResource("1_4b7nf")
+metadata/_edit_lock_ = true

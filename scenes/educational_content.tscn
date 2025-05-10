@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://blqninp5023y1"]
+
+[node name="educational_content" type="AcceptDialog"]
+disable_3d = true
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(849, 158)
+visible = true
+max_size = Vector2i(1900, 1000)
+dialog_text = "
+Phishing uses manipulation to prompt users to click on a malicious website link.
+The link may trick you into entering some personal data or it can infect your device with malicious software."
+dialog_close_on_escape = false

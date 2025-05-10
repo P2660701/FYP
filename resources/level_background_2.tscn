@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8b6kcdmhfdf6"]
+
+[ext_resource type="Texture2D" uid="uid://m48a14hrl6tn" path="res://assets/mega-factory-scene-creation-2d-game-asset-pack/tileset.svg" id="1_1cuix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dkxtv"]
+size = Vector2(380.662, 363.092)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ytoh2"]
+size = Vector2(128.839, 99.5576)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jhosx"]
+size = Vector2(374.805, 105.414)
+
+[node name="level_background2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(466, 416)
+scale = Vector2(0.170755, 0.170755)
+texture = ExtResource("1_1cuix")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Sprite2D"]
+position = Vector2(-2149.27, -1147.84)
+scale = Vector2(1, 1)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D2"]
+visible = false
+position = Vector2(3.88916, 21.9685)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_dkxtv")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Sprite2D"]
+position = Vector2(-2150.23, -1146.38)
+scale = Vector2(1, 1)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D6"]
+visible = false
+position = Vector2(1072.67, 171.305)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ytoh2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+visible = false
+position = Vector2(-1522.65, -1165.41)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_jhosx")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Sprite2D"]
+position = Vector2(-1019, -298.673)
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D3"]
+visible = false
+position = Vector2(-1727.62, -1235.69)
+scale = Vector2(1, 1)
+polygon = PackedVector2Array(0, 0, 134.696, 0, 257.679, -128.839, 398.23, -128.839, 527.07, 0, 644.196, 0, 644.196, 199.115, 5.85633, 199.115)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Sprite2D"]
+position = Vector2(-1019, -298.673)
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D4"]
+visible = false
+position = Vector2(-1727.62, -1235.69)
+scale = Vector2(1, 1)
+polygon = PackedVector2Array(0, 0, 134.696, 0, 257.679, -128.839, 398.23, -128.839, 527.07, 0, 644.196, 0, 644.196, 199.115, 5.85633, 199.115)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Sprite2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D5"]
+visible = false
+position = Vector2(-1721.76, -1341.1)
+polygon = PackedVector2Array(0, -5.85645, 128.839, -5.85645, 251.822, -134.696, 386.518, -5.85645, 509.501, -5.85645, 767.179, -134.696, 901.875, -134.696, 1153.7, -5.85645, 1276.68, -5.85645, 1276.68, 93.7012, 1024.86, 93.7012, 1024.86, -35.1381, 644.196, -29.2817, 644.196, 93.7012, 0, 93.7012)
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Sprite2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D7"]
+visible = false
+position = Vector2(-2746.62, -1920.88)
+polygon = PackedVector2Array(0, -5.85617, 134.696, -5.85617, 380.661, -128.839, 521.213, -128.839, 767.179, -5.85617, 901.875, -5.85617, 901.875, 234.253, 5.85633, 234.253)

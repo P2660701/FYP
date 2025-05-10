@@ -1,0 +1,567 @@
+[gd_scene load_steps=72 format=3 uid="uid://86ixudnff068"]
+
+[ext_resource type="Texture2D" uid="uid://cpl7ah8l24l5p" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_000.png" id="1_pokaf"]
+[ext_resource type="Texture2D" uid="uid://bctqyub6sh31" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_hurt_000.png" id="1_th2q5"]
+[ext_resource type="Texture2D" uid="uid://ecxtwrcxhu8q" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_001.png" id="2_oxbth"]
+[ext_resource type="Texture2D" uid="uid://dhgrjtjq04tom" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_hurt_001.png" id="2_y6yyj"]
+[ext_resource type="Texture2D" uid="uid://b1v8l433tqrxc" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_hurt_002.png" id="3_boddj"]
+[ext_resource type="Texture2D" uid="uid://de7qgifb4ojkm" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_002.png" id="3_hfje2"]
+[ext_resource type="Texture2D" uid="uid://bmhf2cq58fac3" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_hurt_003.png" id="4_c5t2i"]
+[ext_resource type="Texture2D" uid="uid://buj8j04cujcm6" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_003.png" id="4_qo7dk"]
+[ext_resource type="Texture2D" uid="uid://cvgkypju55gpr" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_004.png" id="5_lrhyj"]
+[ext_resource type="Texture2D" uid="uid://cygsty1ygnkpw" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_hurt_004.png" id="5_xxdv5"]
+[ext_resource type="Texture2D" uid="uid://dk8npd6n2oof2" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_005.png" id="6_i4rav"]
+[ext_resource type="Texture2D" uid="uid://ceuih7bisn86m" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_000.png" id="6_rxlhp"]
+[ext_resource type="Texture2D" uid="uid://b8i86gv3p5sb7" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_006.png" id="7_t1xf4"]
+[ext_resource type="Texture2D" uid="uid://dxfdq7a7vnnuo" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_001.png" id="7_we3x3"]
+[ext_resource type="Texture2D" uid="uid://bckm7od3vr3h4" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_002.png" id="8_4uslc"]
+[ext_resource type="Texture2D" uid="uid://bpnve8214gpgw" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_007.png" id="8_tpgye"]
+[ext_resource type="Texture2D" uid="uid://db71asesgou1l" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_008.png" id="9_va5ck"]
+[ext_resource type="Texture2D" uid="uid://vt007w20h4bv" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_003.png" id="9_ykatd"]
+[ext_resource type="Texture2D" uid="uid://85jpfgrf1ah6" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_falling_009.png" id="10_bso0s"]
+[ext_resource type="Texture2D" uid="uid://b3t1uvvrto7dq" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_004.png" id="10_etanq"]
+[ext_resource type="Texture2D" uid="uid://bqs1pi3dvo3cs" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_005.png" id="11_p6cxe"]
+[ext_resource type="Texture2D" uid="uid://cxx8vjtjgxnb8" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_006.png" id="12_nxgtb"]
+[ext_resource type="Texture2D" uid="uid://d3uiy35awkxs4" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_007.png" id="13_gxjje"]
+[ext_resource type="Texture2D" uid="uid://c1gj3gyiq50pp" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_008.png" id="14_6u2b2"]
+[ext_resource type="Texture2D" uid="uid://cpi5ismvbsev4" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_009.png" id="15_atrpw"]
+[ext_resource type="Texture2D" uid="uid://cubd5v0na5r8s" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_010.png" id="16_b1g8b"]
+[ext_resource type="Texture2D" uid="uid://od1arv84bxl" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_011.png" id="17_n70ol"]
+[ext_resource type="Texture2D" uid="uid://kutdvmwnhc10" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_012.png" id="18_cetcn"]
+[ext_resource type="Texture2D" uid="uid://bw042j5p6yq5x" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_013.png" id="19_2lelw"]
+[ext_resource type="Texture2D" uid="uid://brh1v41hdl72s" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_014.png" id="20_8fxm0"]
+[ext_resource type="Texture2D" uid="uid://cjae1tokj457d" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_015.png" id="21_ws8r7"]
+[ext_resource type="Texture2D" uid="uid://dmv6j1psa88yl" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_016.png" id="22_kiww6"]
+[ext_resource type="Texture2D" uid="uid://dngehxjqjtpco" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_017.png" id="23_5tita"]
+[ext_resource type="Texture2D" uid="uid://mgp5wfe8lv34" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_018.png" id="24_m3848"]
+[ext_resource type="Texture2D" uid="uid://dchxpwbmbovsw" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_idle_019.png" id="25_wkow7"]
+[ext_resource type="Texture2D" uid="uid://bxkbtmso552t8" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_000.png" id="26_x62w0"]
+[ext_resource type="Texture2D" uid="uid://buwicnf6d2oi7" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_001.png" id="27_iquvy"]
+[ext_resource type="Texture2D" uid="uid://b5c1u2dbd8qbt" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_002.png" id="28_8tep4"]
+[ext_resource type="Texture2D" uid="uid://dw75e1yrr446w" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_003.png" id="29_cmd5y"]
+[ext_resource type="Texture2D" uid="uid://dfobxgjr3hg40" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_004.png" id="30_lb63n"]
+[ext_resource type="Texture2D" uid="uid://c2edey0a0d58v" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_005.png" id="31_77alk"]
+[ext_resource type="Texture2D" uid="uid://dwwbbe8hil3pd" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_006.png" id="32_3es8o"]
+[ext_resource type="Texture2D" uid="uid://btd1fkopdr14e" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_007.png" id="33_ygi0o"]
+[ext_resource type="Texture2D" uid="uid://qna38yutklxq" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_008.png" id="34_6wfgw"]
+[ext_resource type="Texture2D" uid="uid://c45468bmlqb8f" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_jump_009.png" id="35_5j58a"]
+[ext_resource type="Texture2D" uid="uid://bv6p8vibpq10s" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_000.png" id="36_bb7pi"]
+[ext_resource type="Texture2D" uid="uid://d0c850hit214" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_001.png" id="37_jahya"]
+[ext_resource type="Texture2D" uid="uid://cko447h4cnju5" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_002.png" id="38_h16ob"]
+[ext_resource type="Texture2D" uid="uid://jtqogofwglrf" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_003.png" id="39_gli4p"]
+[ext_resource type="Texture2D" uid="uid://cnp0tj7klxxvj" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_004.png" id="40_loga5"]
+[ext_resource type="Texture2D" uid="uid://cq80xei4f6st" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_005.png" id="41_i4ev2"]
+[ext_resource type="Texture2D" uid="uid://dhcsyyp767rdl" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_006.png" id="42_m3g4r"]
+[ext_resource type="Texture2D" uid="uid://bijyds6ogea75" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_run_007.png" id="43_mjcvl"]
+[ext_resource type="Texture2D" uid="uid://b87cpg70jlqcq" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_000.png" id="44_jesod"]
+[ext_resource type="Texture2D" uid="uid://pjnwguabeqat" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_001.png" id="45_oiltq"]
+[ext_resource type="Texture2D" uid="uid://c20oaq16niumu" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_002.png" id="46_ljdgi"]
+[ext_resource type="Texture2D" uid="uid://cc1gxm3qw727u" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_003.png" id="47_8i467"]
+[ext_resource type="Texture2D" uid="uid://b1v1qw2k1c6p1" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_004.png" id="48_bburh"]
+[ext_resource type="Texture2D" uid="uid://brsdtwtts5xdx" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_005.png" id="49_yfqn3"]
+[ext_resource type="Texture2D" uid="uid://cg4xx8lwo2n50" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_006.png" id="50_8aycx"]
+[ext_resource type="Texture2D" uid="uid://glom4iudn7fn" path="res://assets/little-old-ladies (1)/keyframes/pink_dress/__old_lady_pink_dress_walk_007.png" id="51_6h7fq"]
+
+[sub_resource type="GDScript" id="GDScript_v8vki"]
+script/source = "extends CharacterBody2D 
+# velocity is the direction * magnitude of an action
+
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\") # uses the project setting value for gravity (980)
+
+
+const WALKING_SPEED = 100.0 # to move by 25 pixels
+const RUNNING_SPEED = WALKING_SPEED * 1.25
+const JUMP_VELOCITY = -500.0  # positive y vectors are represented as going downwards
+# @export allows editing in the inspector
+
+
+@onready var anim = $AnimationPlayer as AnimationPlayer # accesses the node from the main scene at runtime. $ is the same as get.node
+@onready var sprite = $AnimatedSprite2D as AnimatedSprite2D
+
+# Runs immediately the scene is entered
+func _ready():
+	anim.play(\"Idle\")
+
+func _physics_process(delta): # Anytime a collision occurs checked every frame (occurs in miliseconds)
+	
+	# on_floor detects the surface type of the body subset of motion_mode
+	if is_on_floor():
+		if Input.is_action_just_pressed(\"Jump\"):
+			velocity.y += JUMP_VELOCITY # it essentially loops when pressed
+			anim.play(\"Jump\")
+		
+			
+	#	if Input.is_action_just_released(\"Jump\"):
+	#		velocity.y = 0
+	#		anim.stop()
+			
+	if not is_on_floor():
+		velocity.y += gravity * delta # the velocity will be 9.8 * the frame rate
+
+	var direction = Vector2.ZERO
+	
+	if Input.is_action_just_pressed(\"Walk Left\"):
+		direction.x -= 1
+		sprite.flip_h = true
+		velocity.x -= WALKING_SPEED
+		anim.play(\"Walk\")
+	elif Input.is_action_just_released(\"Walk Left\"):
+		anim.play(\"Idle\")
+		velocity.x = 0
+		
+	if Input.is_action_just_pressed(\"Walk Right\"):
+		direction.x += 1
+		sprite.flip_h = false
+		velocity.x += WALKING_SPEED
+		anim.play(\"Walk\")
+	elif Input.is_action_just_released(\"Walk Right\"):
+		anim.play(\"Idle\")
+		velocity.x = 0
+		
+	if Input.is_action_just_pressed(\"Run Left\"):
+		direction.x -= 1
+		sprite.flip_h = true
+		velocity.x -= RUNNING_SPEED
+		anim.play(\"Run\")
+	elif Input.is_action_just_released(\"Run Left\"):
+		anim.play(\"Idle\")
+		velocity.x = 0
+		
+	if Input.is_action_just_pressed(\"Run Right\"):
+	#if Vector2.length() < 0:
+		direction.x += 1
+		sprite.flip_h = false
+		velocity.x += RUNNING_SPEED
+		anim.play(\"Run\")
+	elif Input.is_action_just_released(\"Run Right\"):
+		anim.play(\"Idle\")
+		velocity.x = 0
+		
+	move_and_slide() # takes a VECTOR2 property
+	# velocity is (Vector2(0,0) by default, grround is facing up Vector.UP
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2eikr"]
+radius = 3041.11
+height = 11945.6
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rju4k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pokaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_oxbth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_hfje2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qo7dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lrhyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i4rav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t1xf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tpgye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_va5ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bso0s")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_th2q5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y6yyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_boddj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c5t2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xxdv5")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_rxlhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_we3x3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4uslc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ykatd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_etanq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p6cxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nxgtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gxjje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6u2b2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_atrpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b1g8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n70ol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cetcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2lelw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8fxm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ws8r7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_kiww6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5tita")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_m3848")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wkow7")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_x62w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_iquvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_8tep4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_cmd5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lb63n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_77alk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3es8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ygi0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6wfgw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_5j58a")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_bb7pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_jahya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_h16ob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_gli4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_loga5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_i4ev2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_m3g4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_mjcvl")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_jesod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_oiltq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ljdgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_8i467")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_bburh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_yfqn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_8aycx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_6h7fq")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="Animation" id="Animation_5tvyd"]
+resource_name = "Hurt"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"Hurt", &"Hurt"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_b8cki"]
+resource_name = "Idle"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.633333, 0.8, 0.966667, 1.16667, 1.4, 1.56667, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 2.96667, 3.2, 3.36667, 3.56667, 3.76667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333, 4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"Idle", &"Idle"]
+}
+
+[sub_resource type="Animation" id="Animation_uxsb0"]
+resource_name = "Jump"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.53333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"Jump", &"Jump"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.433333, 0.666667, 0.866667, 1.06667, 1.26667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_egvv4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"Walk"]
+}
+
+[sub_resource type="Animation" id="Animation_n3chi"]
+resource_name = "Run"
+length = 1.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7, 0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"Run", &"Run"]
+}
+
+[sub_resource type="Animation" id="Animation_klrt5"]
+resource_name = "Walk"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.58526, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [&"Walk", &"Walk", &"Walk"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k1pio"]
+_data = {
+"Hurt": SubResource("Animation_5tvyd"),
+"Idle": SubResource("Animation_b8cki"),
+"Jump": SubResource("Animation_uxsb0"),
+"RESET": SubResource("Animation_egvv4"),
+"Run": SubResource("Animation_n3chi"),
+"Walk": SubResource("Animation_klrt5")
+}
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(152, 890)
+scale = Vector2(0.0073785, 0.0073785)
+script = SubResource("GDScript_v8vki")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-195, 126)
+scale = Vector2(0.999999, 0.999999)
+shape = SubResource("CapsuleShape2D_2eikr")
+metadata/_edit_lock_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1705, -1412)
+scale = Vector2(22.4939, 22.341)
+sprite_frames = SubResource("SpriteFrames_rju4k")
+animation = &"Walk"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k1pio")
+}

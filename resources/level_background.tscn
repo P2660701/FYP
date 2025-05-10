@@ -1,0 +1,245 @@
+[gd_scene load_steps=10 format=3 uid="uid://022xeupv2jpr"]
+
+[ext_resource type="Texture2D" uid="uid://bgpjiyibxgch8" path="res://assets/mega-factory-scene-creation-2d-game-asset-pack/factoryCreationPack_tileset.png" id="1_n13l4"]
+[ext_resource type="Texture2D" uid="uid://vejvtcmhns0h" path="res://assets/mega-factory-scene-creation-2d-game-asset-pack/factory creation pack.svg" id="1_s5fks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u171v"]
+size = Vector2(206.061, 201.108)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3vrot"]
+size = Vector2(456.608, 80.6616)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5anld"]
+size = Vector2(515.664, 75.8439)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fos17"]
+size = Vector2(462.76, 103.145)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q3vei"]
+radius = 114.42
+height = 346.885
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2onpx"]
+size = Vector2(164.864, 207.532)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y1sdy"]
+size = Vector2(433.075, 180.23)
+
+[node name="level_background" type="Node"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(3, -73)
+scale = Vector2(0.812793, 0.622685)
+texture = ExtResource("1_n13l4")
+centered = false
+region_enabled = true
+region_rect = Rect2(1568, 3296, 1408, 1088)
+
+[node name="background2" type="Sprite2D" parent="."]
+position = Vector2(1420, -2)
+scale = Vector2(0.812793, 0.622685)
+texture = ExtResource("1_n13l4")
+centered = false
+region_enabled = true
+region_rect = Rect2(32, 3296, 1408, 1088)
+
+[node name="toxic_water" type="Sprite2D" parent="."]
+position = Vector2(-87.9999, 698)
+scale = Vector2(1.32523, 0.38689)
+texture = ExtResource("1_n13l4")
+centered = false
+region_enabled = true
+region_rect = Rect2(128, 2208, 864, 352)
+metadata/_edit_group_ = true
+
+[node name="Crate" type="Sprite2D" parent="."]
+position = Vector2(1244, 569)
+scale = Vector2(0.528276, 0.398727)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(3048, 4584, 200, 192)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Crate"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Crate/StaticBody2D"]
+position = Vector2(95.7576, 90.554)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_u171v")
+
+[node name="background_panel" type="Sprite2D" parent="."]
+position = Vector2(1376, 864.631)
+scale = Vector2(0.433036, 0.331751)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(40, 5208, 448, 504)
+metadata/_edit_group_ = true
+
+[node name="moving_bar1" type="Sprite2D" parent="."]
+position = Vector2(1123, 843)
+scale = Vector2(0.479545, 0.622685)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(40, 5072, 440, 72)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="moving_bar1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="moving_bar1/RigidBody2D"]
+visible = false
+position = Vector2(218.304, 30.3308)
+shape = SubResource("RectangleShape2D_3vrot")
+
+[node name="moving_bar2" type="Sprite2D" parent="."]
+position = Vector2(1543, 376)
+scale = Vector2(0.280242, 0.622685)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(336, 1880, 496, 64)
+metadata/_edit_group_ = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="moving_bar2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="moving_bar2/RigidBody2D"]
+visible = false
+position = Vector2(247.832, 27.922)
+shape = SubResource("RectangleShape2D_5anld")
+
+[node name="moving_bar3" type="Sprite2D" parent="."]
+position = Vector2(1116, 743)
+scale = Vector2(0.425439, 0.622685)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(24, 4880, 456, 88)
+metadata/_edit_group_ = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="moving_bar3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="moving_bar3/RigidBody2D"]
+visible = false
+position = Vector2(221.38, 41.5725)
+shape = SubResource("RectangleShape2D_fos17")
+
+[node name="bar_control" type="Sprite2D" parent="."]
+position = Vector2(1618, 874)
+scale = Vector2(0.359375, 0.375809)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(56, 4488, 384, 400)
+metadata/_edit_group_ = true
+
+[node name="tube_1" type="Sprite2D" parent="."]
+position = Vector2(761, 856)
+scale = Vector2(0.5125, 0.392629)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(576, 232, 240, 280)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tube_1"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tube_1/StaticBody2D"]
+visible = false
+position = Vector2(121.802, 99.5688)
+shape = SubResource("CapsuleShape2D_q3vei")
+
+[node name="tube_2" type="Sprite2D" parent="."]
+position = Vector2(914, 862)
+scale = Vector2(0.55625, 0.426146)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(1120, 288, 160, 200)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tube_2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tube_2/StaticBody2D"]
+visible = false
+position = Vector2(78.7406, 93.7659)
+shape = SubResource("RectangleShape2D_2onpx")
+
+[node name="tube_3" type="Sprite2D" parent="."]
+position = Vector2(389, 902)
+scale = Vector2(0.504321, 0.386363)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(1896, 320, 424, 176)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tube_3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tube_3/StaticBody2D"]
+visible = false
+position = Vector2(207.925, 80.1152)
+shape = SubResource("RectangleShape2D_y1sdy")
+
+[node name="tube_4" type="Sprite2D" parent="."]
+position = Vector2(624, 981)
+rotation = -1.5708
+scale = Vector2(0.43725, 0.33498)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(904, 0, 312, 200)
+
+[node name="tube_5" type="Sprite2D" parent="."]
+position = Vector2(362, 853)
+rotation = 1.5708
+scale = Vector2(0.437248, 0.334979)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(1256, 0, 312, 200)
+
+[node name="light" type="Sprite2D" parent="."]
+position = Vector2(1735, 698)
+scale = Vector2(0.812793, 0.622685)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(4672, 3296, 352, 576)
+metadata/_edit_group_ = true
+
+[node name="door_open" type="Sprite2D" parent="."]
+position = Vector2(2168, 771)
+scale = Vector2(0.547653, 0.41956)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(96, 576, 512, 448)
+metadata/_edit_group_ = true
+
+[node name="door_closed" type="Sprite2D" parent="."]
+position = Vector2(2011, 989)
+scale = Vector2(0.547653, 0.41956)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(4128, 576, 544, 448)
+metadata/_edit_group_ = true
+
+[node name="equipment" type="Sprite2D" parent="."]
+position = Vector2(810, 972)
+scale = Vector2(0.454887, 0.348491)
+texture = ExtResource("1_s5fks")
+centered = false
+region_enabled = true
+region_rect = Rect2(3296, 2656, 1056, 496)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="equipment"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="equipment/StaticBody2D"]
+visible = false
+position = Vector2(214.077, 17.6654)
+polygon = PackedVector2Array(-20.9158, -16.0596, -3.69092, 181.472, -182.088, 181.472, -182.088, 399.881, -217.768, 409.517, -217.768, 460.907, 852.615, 464.119, 793.56, 370.974, 787.408, 173.442, 728.353, 173.442, 724.662, -11.2416)
+one_way_collision = true
+metadata/_edit_lock_ = true

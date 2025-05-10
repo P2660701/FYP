@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://cscbmwhv0dybq"]
+
+[ext_resource type="Texture2D" uid="uid://bd4uohvystmok" path="res://assets/ore-amp-minerals/pngs/gold.png" id="1_mvj2a"]
+
+[sub_resource type="GDScript" id="GDScript_c35f6"]
+resource_name = "Gold"
+script/source = "extends Area2D
+
+
+@onready var body = $Player as CharacterBody2D
+
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Player\":
+		queue_free()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlk4t"]
+radius = 8.73678
+height = 17.4736
+
+[node name="Gold Ore" type="Area2D"]
+scale = Vector2(0.996169, 1)
+script = SubResource("GDScript_c35f6")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(269.575, 153.575)
+scale = Vector2(2.10359, 1.30769)
+shape = SubResource("CapsuleShape2D_mlk4t")
+
+[node name="Ore image" type="Sprite2D" parent="."]
+position = Vector2(270.035, 152)
+scale = Vector2(0.0745098, 0.0745098)
+texture = ExtResource("1_mvj2a")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,1 @@
+There's option to include a diving animation for the wasp enemy
