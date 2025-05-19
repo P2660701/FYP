@@ -13,9 +13,7 @@ atlas = ExtResource("1_bs58v")
 region = Rect2(1, 1, 14, 14)
 filter_clip = true
 
-[node name="Landing Page" type="Node2D"]
-position = Vector2(83, -46)
-scale = Vector2(0.904649, 0.904649)
+[node name="Landing Page" type="Node"]
 
 [node name="Acknowledgements" type="Button" parent="."]
 anchors_preset = 7
@@ -23,10 +21,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 698.613
-offset_top = 981.596
-offset_right = 858.613
-offset_bottom = 1012.6
+offset_left = -235.0
+offset_top = -250.0
+offset_right = -75.0
+offset_bottom = -218.996
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(3.47904, 3.47904)
@@ -37,16 +35,24 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
+[node name="TextureRect" type="ColorRect" parent="Acknowledgements"]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(4.05832, 1)
+color = Color(0.136081, 0.0645072, 0.017624, 1)
+
 [node name="Start" type="Button" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = 852.264
-offset_top = 655.503
-offset_right = 926.264
-offset_bottom = 715.503
+offset_left = -129.0
+offset_top = -554.0
+offset_right = -54.9999
+offset_bottom = -494.0
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(3.25, 3.25)

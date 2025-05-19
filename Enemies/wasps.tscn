@@ -126,6 +126,6 @@ metadata/_edit_lock_ = true
 position = Vector2(7, -8)
 scale = Vector2(0.153005, 0.14011)
 sprite_frames = SubResource("SpriteFrames_j17lj")
-animation = &"Die"
+animation = &"Sting"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

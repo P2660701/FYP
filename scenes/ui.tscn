@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://3tj1gtt018n3"]
+[gd_scene load_steps=4 format=3 uid="uid://3tj1gtt018n3"]
 
 [ext_resource type="Script" path="res://scenes/ui.gd" id="1_octph"]
+[ext_resource type="Texture2D" uid="uid://fb0hkfc6wrjl" path="res://assets/FreeUi/FreeUi/Version2.png" id="2_1v5q7"]
+[ext_resource type="Texture2D" uid="uid://bbfk0e0ialfs3" path="res://assets/ore-amp-minerals/ores.svg" id="3_kiv61"]
 
 [node name="HUD" type="Control"]
 layout_mode = 3
@@ -10,3 +12,35 @@ offset_bottom = -2.0
 tooltip_text = "Heads-up display
 "
 script = ExtResource("1_octph")
+
+[node name="Ore_counter" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 11.0
+offset_right = 166.0
+offset_bottom = 51.0
+scale = Vector2(2.64, 2.64)
+text = "/12"
+
+[node name="Heart_counter" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 1829.0
+offset_top = -6.0
+offset_right = 1869.0
+offset_bottom = 34.0
+scale = Vector2(2.96, 2.96)
+text = "/9"
+
+[node name="Heart_icon" type="Sprite2D" parent="."]
+position = Vector2(1728, 41)
+scale = Vector2(4.52, 4.52)
+texture = ExtResource("2_1v5q7")
+region_enabled = true
+region_rect = Rect2(7, 9, 19, 15)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(45, 38)
+scale = Vector2(0.165799, 0.165799)
+texture = ExtResource("3_kiv61")
+region_enabled = true
+region_rect = Rect2(980, 2980, 604, 477)
