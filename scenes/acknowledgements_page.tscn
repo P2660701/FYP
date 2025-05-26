@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ygux1fkn32sm"]
+
+[ext_resource type="Script" path="res://acknowledgements_page.gd" id="1_ae052"]
+
+[node name="Acknowledgements page" type="AcceptDialog"]
+title = "Acknowledgements"
+initial_position = 2
+size = Vector2i(368, 132)
+visible = true
+ok_button_text = "Close"
+dialog_text = "*filled in closer to the time*
+*Same as the one that features in the report*
+
+"
+script = ExtResource("1_ae052")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

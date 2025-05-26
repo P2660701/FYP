@@ -1,12 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://xne5c4ikmf32"]
+[gd_scene load_steps=6 format=3 uid="uid://xne5c4ikmf32"]
 
 [ext_resource type="Texture2D" uid="uid://bbci4ycp1ty1q" path="res://pngs/background_creation_items/background.png" id="1_4b7nf"]
 [ext_resource type="Texture2D" uid="uid://ce4v401r4tlix" path="res://assets/FreeUi/FreeUi/ClassicalButtons.png" id="1_bs58v"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_san1o"]
-atlas = ExtResource("1_bs58v")
-region = Rect2(1, 1, 14, 14)
-filter_clip = true
+[ext_resource type="Script" path="res://scenes/acknowledgements_from_main.gd" id="2_k2lv8"]
+[ext_resource type="Texture2D" uid="uid://bnfqhhp5obg6" path="res://Title.png" id="4_7xa8c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jd81f"]
 atlas = ExtResource("1_bs58v")
@@ -30,17 +27,18 @@ grow_vertical = 0
 scale = Vector2(3.47904, 3.47904)
 text = "Acknowledgements
 "
-icon = SubResource("AtlasTexture_san1o")
-flat = true
 icon_alignment = 1
 expand_icon = true
+script = ExtResource("2_k2lv8")
 
 [node name="TextureRect" type="ColorRect" parent="Acknowledgements"]
 show_behind_parent = true
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(4.05832, 1)
+offset_left = 103.764
+offset_top = 30.1807
+offset_right = 143.764
+offset_bottom = 70.1807
+scale = Vector2(-2.44774, -0.60314)
 color = Color(0.136081, 0.0645072, 0.017624, 1)
 
 [node name="Start" type="Button" parent="."]
@@ -64,11 +62,15 @@ expand_icon = true
 
 [node name="Sprite2D" type="ParallaxBackground" parent="."]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="Sprite2D"]
-motion_scale = Vector2(0, 0)
-
-[node name="Background" type="Sprite2D" parent="Sprite2D/ParallaxLayer"]
-position = Vector2(1000.38, 772)
+[node name="Background" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(982, 766)
 scale = Vector2(1.38108, 1.42963)
 texture = ExtResource("1_4b7nf")
 metadata/_edit_lock_ = true
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(940, 343)
+scale = Vector2(1.92632, 1.92632)
+texture = ExtResource("4_7xa8c")
+
+[connection signal="pressed" from="Acknowledgements" to="Acknowledgements" method="_on_pressed"]

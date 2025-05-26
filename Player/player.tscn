@@ -80,6 +80,8 @@ const JUMP_VELOCITY = -500.0  # positive y vectors are represented as going down
 
 # Runs immediately the scene is entered
 func _ready():
+	if global.player_position != Vector2.ZERO:
+		global_position = global.player_position + Vector2(75,0) # to avoid an infinte loop between
 	anim.play(\"Idle\")
 
 func _physics_process(delta): # Anytime a collision occurs checked every frame (occurs in miliseconds)
@@ -90,10 +92,6 @@ func _physics_process(delta): # Anytime a collision occurs checked every frame (
 			velocity.y += JUMP_VELOCITY # it essentially loops when pressed
 			anim.play(\"Jump\")
 		
-			
-	#	if Input.is_action_just_released(\"Jump\"):
-	#		velocity.y = 0
-	#		anim.stop()
 			
 	if not is_on_floor():
 		velocity.y += gravity * delta # the velocity will be 9.8 * the frame rate
@@ -363,7 +361,7 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_5tvyd"]
 resource_name = "Hurt"
-length = 2.0
+length = 0.6
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -384,7 +382,7 @@ tracks/1/path = NodePath("AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.8, 1.2, 1.6),
+"times": PackedFloat32Array(0, 0.2, 0.4, 1.2, 1.6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
 "values": [0, 1, 2, 3, 4]

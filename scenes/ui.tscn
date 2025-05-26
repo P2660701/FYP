@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://3tj1gtt018n3"]
+[gd_scene load_steps=5 format=3 uid="uid://3tj1gtt018n3"]
 
 [ext_resource type="Script" path="res://scenes/ui.gd" id="1_octph"]
 [ext_resource type="Texture2D" uid="uid://fb0hkfc6wrjl" path="res://assets/FreeUi/FreeUi/Version2.png" id="2_1v5q7"]
+[ext_resource type="Script" path="res://scenes/ore_counter.gd" id="2_ssgrs"]
 [ext_resource type="Texture2D" uid="uid://bbfk0e0ialfs3" path="res://assets/ore-amp-minerals/ores.svg" id="3_kiv61"]
 
 [node name="HUD" type="Control"]
@@ -20,14 +21,14 @@ offset_top = 11.0
 offset_right = 166.0
 offset_bottom = 51.0
 scale = Vector2(2.64, 2.64)
-text = "/12"
+script = ExtResource("2_ssgrs")
 
 [node name="Heart_counter" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 1829.0
-offset_top = -6.0
-offset_right = 1869.0
-offset_bottom = 34.0
+offset_left = 1821.0
+offset_top = 4.0
+offset_right = 1861.0
+offset_bottom = 44.0
 scale = Vector2(2.96, 2.96)
 text = "/9"
 

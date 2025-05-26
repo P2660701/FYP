@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://2rju0bscd8ed"]
+[gd_scene load_steps=20 format=4 uid="uid://2rju0bscd8ed"]
 
 [ext_resource type="Texture2D" uid="uid://d2bnlwd57puwd" path="res://tileset.png" id="1_2koh0"]
 [ext_resource type="Texture2D" uid="uid://csm8ucwufoovs" path="res://factory creation pack.png" id="2_tkxod"]
@@ -10,8 +10,9 @@
 [ext_resource type="TileSet" uid="uid://b2bemw2wgbegb" path="res://backgrounds.tres" id="8_7j5h4"]
 [ext_resource type="PackedScene" uid="uid://86ixudnff068" path="res://Player/player.tscn" id="9_pc7jx"]
 [ext_resource type="PackedScene" uid="uid://c7oufrl5gwpta" path="res://Ores/diamond_ore.tscn" id="10_w758v"]
-[ext_resource type="PackedScene" uid="uid://cscbmwhv0dybq" path="res://Ores/gold_ore.tscn" id="11_tx47q"]
-[ext_resource type="PackedScene" uid="uid://coksgsheiikxh" path="res://Ores/ruby_ore.tscn" id="12_wdovn"]
+[ext_resource type="Script" path="res://Ores/diamond_ore2.gd" id="11_ejnnp"]
+[ext_resource type="PackedScene" uid="uid://gerl3s4kqsvj" path="res://Enemies/green_fish.tscn" id="12_vnss0"]
+[ext_resource type="PackedScene" uid="uid://dyve1fgt4u4m6" path="res://Enemies/wasps.tscn" id="13_toasj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxm6q"]
 texture = ExtResource("1_2koh0")
@@ -3946,6 +3947,19 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_28p8x")
 sources/0 = SubResource("TileSetAtlasSource_uxm6q")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0mgs"]
+size = Vector2(333, 917)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vks0e"]
+texture = ExtResource("1_2koh0")
+71:25/size_in_atlas = Vector2i(3, 30)
+71:25/0 = 0
+71:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-25.4558, -236.881, 24.0417, -239.709, 23, 241.5, -23, 240.5)
+
+[sub_resource type="TileSet" id="TileSet_686pr"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_vks0e")
+
 [node name="World" type="Node2D"]
 
 [node name="toxic_water" type="TileMapLayer" parent="."]
@@ -3990,17 +4004,37 @@ texture = ExtResource("7_vnih0")
 [node name="Main floor" type="TileMapLayer" parent="."]
 z_index = 1
 position = Vector2(-134, 882)
-tile_map_data = PackedByteArray("AAAMAAEAAAAcABkAAAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAAA6AAEAAAAcABkAAABDAAEAAAAcABkAAABMAAEAAAAcABkAAAA2AAIAAABJABkAAAA1AAEAAABJABkAAAA2AAEAAABJABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAABwAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAAA=")
+tile_map_data = PackedByteArray("AAAMAAEAAAAcABkAAAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAAA6AAEAAAAcABkAAABDAAEAAAAcABkAAABMAAEAAAAcABkAAAA2AAIAAABJABkAAAA1AAEAAABJABkAAAA2AAEAAABJABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAAA=")
 tile_set = ExtResource("8_7j5h4")
 
 [node name="Player" parent="." instance=ExtResource("9_pc7jx")]
 position = Vector2(54, 833)
 
 [node name="diamond_ore" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(551, 867)
+position = Vector2(197, 872)
 
-[node name="gold_ore" parent="." instance=ExtResource("11_tx47q")]
-position = Vector2(0, 722)
+[node name="diamond_ore2" parent="." instance=ExtResource("10_w758v")]
+position = Vector2(385, 873)
+script = ExtResource("11_ejnnp")
 
-[node name="ruby_ore" parent="." instance=ExtResource("12_wdovn")]
-position = Vector2(582, 747)
+[node name="green_fish" parent="." instance=ExtResource("12_vnss0")]
+z_index = 2
+position = Vector2(1834, 966)
+
+[node name="Wasps" parent="." instance=ExtResource("13_toasj")]
+position = Vector2(815, 482)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-167, 448.5)
+shape = SubResource("RectangleShape2D_w0mgs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(2088.5, 433)
+shape = SubResource("RectangleShape2D_w0mgs")
+
+[node name="Wall_limit" type="TileMapLayer" parent="."]
+position = Vector2(-1, 0)
+tile_map_data = PackedByteArray("AAD+/ykAAABHABkAAAD+/wsAAABHABkAAAB5ACgAAABHABkAAAB5AAoAAABHABkAAAB5AEYAAABHABkAAAD+/0YAAABHABkAAAA=")
+tile_set = SubResource("TileSet_686pr")

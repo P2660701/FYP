@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://djs7x20aaywrn"]
+
+[ext_resource type="PackedScene" uid="uid://blqninp5023y1" path="res://scenes/educational_content.tscn" id="1_ivl5o"]
+
+[node name="Info2" instance=ExtResource("1_ivl5o")]
+size = Vector2i(1179, 185)
+dialog_text = "
+If the message appears too good to be true 
+OR 
+it is claiming to come from a trusted person or organisation from an unfamiliar number or email address then it may be an indicator towards phishing.
+
+"

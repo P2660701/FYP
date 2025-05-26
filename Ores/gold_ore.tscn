@@ -7,12 +7,28 @@ resource_name = "Gold"
 script/source = "extends Area2D
 
 
-@onready var body = $Player as CharacterBody2D
+# @onready var body = $Player as CharacterBody2D
 
 
-func _on_body_entered(body: Node2D) -> void:
-	if body.name == \"Player\":
-		queue_free()
+func _on_body_entered(body):
+	#if body.name == \"Player\":
+	
+	global.player_position = global_position
+	print(global.player_position)
+	global.ores_collected += 1
+	print(global.ores_collected)
+	queue_free()
+		#get_tree().change_scene_to_file(\"res://scenes/educational_content.tscn\")
+	#if get_node(\"/root/World/gold_ore\") == null:
+	SceneSwitcher.goto_scene(\"res://scenes/educational_content.tscn\")
+	#	get_tree().change_scene_to_file(\"res://scenes/educational_content.tscn\")
+	#else:
+		#queue_free()
+		#SceneSwitcher.goto_scene(\"res://scenes/educational_content.tscn\")	
+		
+		
+
+	
 "
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mlk4t"]
@@ -22,16 +38,15 @@ height = 17.4736
 [node name="Gold Ore" type="Area2D"]
 scale = Vector2(0.996169, 1)
 script = SubResource("GDScript_c35f6")
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(269.575, 153.575)
+position = Vector2(23.6337, 15.6495)
 scale = Vector2(2.10359, 1.30769)
 shape = SubResource("CapsuleShape2D_mlk4t")
 
 [node name="Ore image" type="Sprite2D" parent="."]
-position = Vector2(270.035, 152)
+position = Vector2(24.0938, 14.0745)
 scale = Vector2(0.0745098, 0.0745098)
 texture = ExtResource("1_mvj2a")
 

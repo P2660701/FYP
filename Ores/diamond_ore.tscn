@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7oufrl5gwpta"]
 
-[ext_resource type="Script" path="res://Ores/diamond_ore.gd" id="1_cl66s"]
+[ext_resource type="Script" path="res://Ores/diamond_ore.gd" id="1_dgtlt"]
 [ext_resource type="Texture2D" uid="uid://mj5mnxgq5bk6" path="res://assets/ore-amp-minerals/pngs/diamond.png" id="1_muj42"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jqoq1"]
@@ -8,9 +8,10 @@ radius = 13.0
 height = 26.0
 
 [node name="diamond_ore" type="Area2D"]
-position = Vector2(330, 59)
-script = ExtResource("1_cl66s")
-metadata/_edit_group_ = true
+position = Vector2(-1, -2)
+scale = Vector2(1.16559, 0.972779)
+collision_layer = 2
+script = ExtResource("1_dgtlt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
@@ -18,8 +19,8 @@ position = Vector2(13, 9)
 shape = SubResource("CapsuleShape2D_jqoq1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(15, 7)
-scale = Vector2(0.062139, 0.062139)
+position = Vector2(1.90735e-06, 1.02798)
+scale = Vector2(0.0720812, 0.0720812)
 texture = ExtResource("1_muj42")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
