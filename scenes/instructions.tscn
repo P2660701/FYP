@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dfbd2xvww4u24"]
+
+[node name="instructions" type="AcceptDialog"]
+disable_3d = true
+transparent_bg = true
+title = "Instructions"
+initial_position = 1
+visible = true
+transparent = true

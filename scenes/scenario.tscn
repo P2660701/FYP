@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8jj7t3gk3axp"]
+
+[ext_resource type="Script" path="res://Scripts/scenario.gd" id="1_wp4ep"]
+
+[node name="Scenario" type="AcceptDialog"]
+transparent_bg = true
+mode = 3
+title = "Scenario"
+initial_position = 1
+size = Vector2i(1339, 262)
+visible = true
+transparent = true
+dialog_text = "You, an elderly lady over 65 have been invited to a tour of the local technology research and development lab.
+As part of an initiative to increase participation amongst older adults with new emerging digital technologies.
+
+After the tour ends, you have some independent time to explore some rooms that weren’t featured on the guided tour, when an announcement is made over the intercom.
+
+“Every visitor must leave the premises immediately due to an emerging incident.”
+
+Now you must navigate your way out"
+dialog_close_on_escape = false
+script = ExtResource("1_wp4ep")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]
