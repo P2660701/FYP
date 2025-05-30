@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://xne5c4ikmf32"]
 
 [ext_resource type="Texture2D" uid="uid://bbci4ycp1ty1q" path="res://pngs/background_creation_items/background.png" id="1_4b7nf"]
-[ext_resource type="Script" path="res://scenes/acknowledgements_from_main.gd" id="2_k2lv8"]
+[ext_resource type="Script" path="res://acknowledgements_from_main.gd" id="2_k2lv8"]
 [ext_resource type="Script" path="res://Scripts/start_button.gd" id="2_vagyx"]
 [ext_resource type="Texture2D" uid="uid://bnfqhhp5obg6" path="res://Title.png" id="4_7xa8c"]
 

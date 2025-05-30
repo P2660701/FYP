@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxasmlwkayhag"]
+
+[ext_resource type="Script" path="res://Scripts/ai_content.gd" id="1_pie6b"]
+
+[node name="AI_content" type="AcceptDialog"]
+disable_3d = true
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(1178, 132)
+visible = true
+transient = false
+ok_button_text = "Continue"
+dialog_text = "
+Artificial Intelligence (AI) describes any computer system that can perform tasks with a level of intelligence that would otherwise be similar to humans.
+
+"
+dialog_close_on_escape = false
+script = ExtResource("1_pie6b")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

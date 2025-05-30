@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://3tj1gtt018n3"]
 
-[ext_resource type="Script" path="res://scenes/ui.gd" id="1_octph"]
+[ext_resource type="Script" path="res://Scripts/ui.gd" id="1_octph"]
 [ext_resource type="Texture2D" uid="uid://fb0hkfc6wrjl" path="res://assets/FreeUi/FreeUi/Version2.png" id="2_1v5q7"]
-[ext_resource type="Script" path="res://scenes/ore_counter.gd" id="2_ssgrs"]
+[ext_resource type="Script" path="res://Scripts/ore_counter.gd" id="2_ssgrs"]
 [ext_resource type="Texture2D" uid="uid://bbfk0e0ialfs3" path="res://assets/ore-amp-minerals/ores.svg" id="3_kiv61"]
 
 [node name="HUD" type="Control"]
