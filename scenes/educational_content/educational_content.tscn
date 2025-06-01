@@ -4,7 +4,7 @@
 resource_name = "return_to_game"
 script/source = "extends AcceptDialog
 
-## supposed to transitions back to the main level scene
+## transitions back to the main level scene
 	
 func _on_confirmed():
 	SceneSwitcher.goto_scene(\"res://scenes/Level.tscn\")

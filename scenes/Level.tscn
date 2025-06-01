@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://2rju0bscd8ed"]
+[gd_scene load_steps=30 format=4 uid="uid://2rju0bscd8ed"]
 
 [ext_resource type="Texture2D" uid="uid://d2bnlwd57puwd" path="res://tileset.png" id="1_2koh0"]
 [ext_resource type="Texture2D" uid="uid://csm8ucwufoovs" path="res://factory creation pack.png" id="2_tkxod"]
@@ -3958,9 +3958,6 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_28p8x")
 sources/0 = SubResource("TileSetAtlasSource_uxm6q")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0mgs"]
-size = Vector2(333, 917)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vks0e"]
 texture = ExtResource("1_2koh0")
 71:25/size_in_atlas = Vector2i(3, 30)
@@ -3973,49 +3970,52 @@ sources/0 = SubResource("TileSetAtlasSource_vks0e")
 
 [node name="World" type="Node2D"]
 
-[node name="toxic_water" type="TileMapLayer" parent="."]
-z_index = 2
-position = Vector2(129, 941)
-scale = Vector2(2.48446, 2.14178)
-tile_map_data = PackedByteArray("AAD+/wEAAQADABcAAAAGAAEAAQADABcAAAASAAEAAQADABcAAAAMAAEAAQADABcAAAAdAAEAAQADABcAAAAXAAEAAQADABcAAAAlAAEAAQADABcAAAAsAAEAAQADABcAAAAyAAEAAQADABcAAAA=")
-tile_set = SubResource("TileSet_32elo")
-metadata/_edit_lock_ = true
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1920, 0)
+repeat_times = 2
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(961.688, 536)
+[node name="toxic_water" type="TileMapLayer" parent="Parallax2D"]
+z_index = 2
+position = Vector2(4990, 944)
+scale = Vector2(2.48446, 2.14178)
+tile_map_data = PackedByteArray("AAD+/wEAAQADABcAAAAGAAEAAQADABcAAAASAAEAAQADABcAAAAMAAEAAQADABcAAAAdAAEAAQADABcAAAAXAAEAAQADABcAAAAlAAEAAQADABcAAAAsAAEAAQADABcAAAAyAAEAAQADABcAAAA8AAEAAQADABcAAABGAAEAAQADABcAAABQAAEAAQADABcAAABaAAEAAQADABcAAAD2/wEAAQADABcAAADs/wEAAQADABcAAAA=")
+tile_set = SubResource("TileSet_32elo")
+
+[node name="Background" type="Sprite2D" parent="Parallax2D"]
+position = Vector2(2856, 543)
 scale = Vector2(1.33707, 1.01111)
 texture = ExtResource("3_ya6id")
 metadata/_edit_group_ = true
 
-[node name="WindowBackground" type="Sprite2D" parent="Background"]
+[node name="WindowBackground" type="Sprite2D" parent="Parallax2D/Background"]
 position = Vector2(465.07, -272.706)
 scale = Vector2(0.745903, 0.984858)
 texture = ExtResource("4_jatsf")
 
-[node name="PipeBackground" type="Sprite2D" parent="Background"]
+[node name="PipeBackground" type="Sprite2D" parent="Parallax2D/Background"]
 position = Vector2(138.558, -127.818)
 scale = Vector2(0.488837, 0.725503)
 texture = ExtResource("5_ivy0b")
 
-[node name="PipeBackground2" type="Sprite2D" parent="Background"]
+[node name="PipeBackground2" type="Sprite2D" parent="Parallax2D/Background"]
 position = Vector2(-349.954, -479.214)
 rotation = 1.57048
 scale = Vector2(0.488837, 0.725503)
 texture = ExtResource("5_ivy0b")
 
-[node name="vent_oozing" type="Sprite2D" parent="Background"]
+[node name="vent_oozing" type="Sprite2D" parent="Parallax2D/Background"]
 position = Vector2(468.837, 183.608)
 scale = Vector2(0.655227, 0.803467)
 texture = ExtResource("6_paqr5")
 
-[node name="CoverBackground" type="Sprite2D" parent="Background"]
+[node name="CoverBackground" type="Sprite2D" parent="Parallax2D/Background"]
 position = Vector2(-382.605, -64.5336)
 texture = ExtResource("7_vnih0")
 
 [node name="Main floor" type="TileMapLayer" parent="."]
 z_index = 1
-position = Vector2(-134, 882)
-tile_map_data = PackedByteArray("AAAMAAEAAAAcABkAAAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAAA6AAEAAAAcABkAAABDAAEAAAAcABkAAABMAAEAAAAcABkAAAA2AAIAAABJABkAAAA1AAEAAABJABkAAAA2AAEAAABJABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAAA=")
+position = Vector2(-165, 881)
+tile_map_data = PackedByteArray("AAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAABMAAEAAAAcABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAABwAAEAAAAcABkAAACKAAEAAAAcABkAAACTAAEAAAAcABkAAACcAAEAAAAcABkAAAClAAEAAAAcABkAAACuAAEAAAAcABkAAAC3AAEAAAAcABkAAADAAAEAAAAcABkAAADJAAEAAAAcABkAAADSAAEAAAAcABkAAADbAAEAAAAcABkAAADkAAEAAAAcABkAAADtAAEAAAAcABkAAAD2AAEAAAAcABkAAAD/AAEAAAAcABkAAAAIAQEAAAAcABkAAAARAQEAAAAcABkAAAAaAQEAAAAcABkAAAAjAQEAAAAcABkAAAAsAQEAAAAcABkAAAA1AQEAAAAcABkAAAA+AQEAAAAcABkAAABHAQEAAAAcABkAAABQAQEAAAAcABkAAABZAQEAAAAcABkAAABiAQEAAAAcABkAAABrAQEAAAAcABkAAAANAAEAAAAcABkAAAA5AP//AAArABEAAAA+APz/AAAMAAEAAAA/APz/AAAMAAEAAABAAPz/AAAMAAEAAABBAPz/AAAMAAEAAABCAPz/AAAMAAEAAABDAPz/AAAMAAEAAABEAPz/AAAMAAEAAABFAPz/AAAMAAEAAABGAPz/AAAMAAEAAABHAPz/AAAMAAEAAABIAPz/AAAMAAEAAABJAPz/AAAMAAEAAAA=")
 tile_set = ExtResource("8_7j5h4")
 
 [node name="Level builder" type="TileMapLayer" parent="."]
@@ -4028,43 +4028,43 @@ tile_set = ExtResource("8_7j5h4")
 position = Vector2(54, 833)
 
 [node name="diamond_ore" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(197, 872)
+position = Vector2(400, 873)
 script = ExtResource("11_hyt5q")
 
 [node name="diamond_ore2" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(385, 873)
+position = Vector2(1656, 871)
 script = ExtResource("11_ejnnp")
 
 [node name="diamond_ore3" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(553, 873)
+position = Vector2(2201, 873)
 script = ExtResource("13_s66gh")
 
 [node name="diamond_ore4" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(688, 873)
+position = Vector2(2656, 867)
 script = ExtResource("19_svw8w")
 
 [node name="ruby_ore" parent="." instance=ExtResource("14_eofdr")]
-position = Vector2(896, 874)
+position = Vector2(3023, 872)
 script = ExtResource("15_gy2gb")
 
 [node name="ruby_ore2" parent="." instance=ExtResource("14_eofdr")]
-position = Vector2(1097, 874)
+position = Vector2(3432, 873)
 script = ExtResource("18_atk2t")
 
 [node name="Gold Ore" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(1202, 873)
+position = Vector2(3848, 867)
 script = ExtResource("19_iyj51")
 
 [node name="Gold Ore2" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(1337, 873)
+position = Vector2(4280, 869)
 script = ExtResource("20_ic3k8")
 
 [node name="Gold Ore3" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(1475, 873)
+position = Vector2(4644, 866)
 script = ExtResource("21_rvypw")
 
 [node name="Gold Ore4" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(1814, 866)
+position = Vector2(5067, 870)
 script = ExtResource("22_jink6")
 
 [node name="green_fish" parent="." instance=ExtResource("12_vnss0")]
@@ -4074,18 +4074,13 @@ position = Vector2(1834, 966)
 [node name="Wasps" parent="." instance=ExtResource("13_toasj")]
 position = Vector2(815, 482)
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(-167, 448.5)
-shape = SubResource("RectangleShape2D_w0mgs")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="RigidBody2D"]
-position = Vector2(2088.5, 433)
-shape = SubResource("RectangleShape2D_w0mgs")
-
 [node name="Wall_limit" type="TileMapLayer" parent="."]
-position = Vector2(-1, 0)
+position = Vector2(-1967, -5)
+tile_map_data = PackedByteArray("AAD+/ykAAABHABkAAAD+/wsAAABHABkAAAB5ACgAAABHABkAAAB5AAoAAABHABkAAAB5AEYAAABHABkAAAD+/0YAAABHABkAAAA=")
+tile_set = SubResource("TileSet_686pr")
+
+[node name="Wall_limit_end" type="TileMapLayer" parent="."]
+position = Vector2(5786, -42)
 tile_map_data = PackedByteArray("AAD+/ykAAABHABkAAAD+/wsAAABHABkAAAB5ACgAAABHABkAAAB5AAoAAABHABkAAAB5AEYAAABHABkAAAD+/0YAAABHABkAAAA=")
 tile_set = SubResource("TileSet_686pr")
 

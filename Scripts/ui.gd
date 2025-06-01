@@ -14,3 +14,5 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+## when it is is instantiated in the level scene use $___ to get the node and change the counter based on global.ores_collect and the same for hearts
