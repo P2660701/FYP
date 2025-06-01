@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://gmfxl0uknota"]
+
+[ext_resource type="Script" path="res://Scripts/what_to_do.gd" id="1_l8dbx"]
+
+[node name="What_to_do" type="AcceptDialog"]
+disable_3d = true
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(1203, 340)
+visible = true
+transient = false
+ok_button_text = "Continue"
+dialog_text = "
+What to do if you see or interact with phishing email?
+
+Report it immediately!
+
+Emails can be forwarded to report@phishing.gov.uk.
+ActionFraud also give advice on the website https://wwww.actionfraud.police.uk/report-phishing
+
+You can contact the legitimate organisation through the established channels like their website or phone number. 
+They may also have a page for reporting.
+
+"
+script = ExtResource("1_l8dbx")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

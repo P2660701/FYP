@@ -1,4 +1,5 @@
 ## autoloaded scene which is globally accessible while the project is in execution
+
 extends Node
 
 # maybe I'll need a dictionary as well
@@ -36,7 +37,5 @@ func _deferred_goto_scene(path):
 	# OR
 	get_tree().current_scene = current_scene # so it's compatible with change_scene_to_file() API
 	
-## What I want is to save data from the level scene back to the educational content 
-## instance then transition back to the level reloading the saved data from the level
 
-# because a new instance of the scene is created you need to figure out how to get the main level to persist we've got the position
+## instance then transition back to the level reloading the saved data from the level which is stored in global.gd

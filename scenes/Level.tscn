@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://2rju0bscd8ed"]
+[gd_scene load_steps=31 format=4 uid="uid://2rju0bscd8ed"]
 
 [ext_resource type="Texture2D" uid="uid://d2bnlwd57puwd" path="res://tileset.png" id="1_2koh0"]
 [ext_resource type="Texture2D" uid="uid://csm8ucwufoovs" path="res://factory creation pack.png" id="2_tkxod"]
@@ -11,8 +11,19 @@
 [ext_resource type="PackedScene" uid="uid://86ixudnff068" path="res://Player/player.tscn" id="9_pc7jx"]
 [ext_resource type="PackedScene" uid="uid://c7oufrl5gwpta" path="res://Ores/diamond_ore.tscn" id="10_w758v"]
 [ext_resource type="Script" path="res://Ores/diamond_ore2.gd" id="11_ejnnp"]
+[ext_resource type="Script" path="res://Ores/diamond_ore.gd" id="11_hyt5q"]
 [ext_resource type="PackedScene" uid="uid://gerl3s4kqsvj" path="res://Enemies/green_fish.tscn" id="12_vnss0"]
+[ext_resource type="Script" path="res://Ores/diamond_ore3.gd" id="13_s66gh"]
 [ext_resource type="PackedScene" uid="uid://dyve1fgt4u4m6" path="res://Enemies/wasps.tscn" id="13_toasj"]
+[ext_resource type="PackedScene" uid="uid://coksgsheiikxh" path="res://Ores/ruby_ore.tscn" id="14_eofdr"]
+[ext_resource type="Script" path="res://Ores/ruby_ore.gd" id="15_gy2gb"]
+[ext_resource type="Script" path="res://Ores/ruby_ore2.gd" id="18_atk2t"]
+[ext_resource type="PackedScene" uid="uid://cscbmwhv0dybq" path="res://Ores/gold_ore.tscn" id="18_qy6rv"]
+[ext_resource type="Script" path="res://Ores/gold_ore.gd" id="19_iyj51"]
+[ext_resource type="Script" path="res://Ores/diamond_ore4.gd" id="19_svw8w"]
+[ext_resource type="Script" path="res://Ores/gold_ore2.gd" id="20_ic3k8"]
+[ext_resource type="Script" path="res://Ores/gold_ore3.gd" id="21_rvypw"]
+[ext_resource type="Script" path="res://Ores/gold_ore4.gd" id="22_jink6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxm6q"]
 texture = ExtResource("1_2koh0")
@@ -4018,10 +4029,43 @@ position = Vector2(54, 833)
 
 [node name="diamond_ore" parent="." instance=ExtResource("10_w758v")]
 position = Vector2(197, 872)
+script = ExtResource("11_hyt5q")
 
 [node name="diamond_ore2" parent="." instance=ExtResource("10_w758v")]
 position = Vector2(385, 873)
 script = ExtResource("11_ejnnp")
+
+[node name="diamond_ore3" parent="." instance=ExtResource("10_w758v")]
+position = Vector2(553, 873)
+script = ExtResource("13_s66gh")
+
+[node name="diamond_ore4" parent="." instance=ExtResource("10_w758v")]
+position = Vector2(688, 873)
+script = ExtResource("19_svw8w")
+
+[node name="ruby_ore" parent="." instance=ExtResource("14_eofdr")]
+position = Vector2(896, 874)
+script = ExtResource("15_gy2gb")
+
+[node name="ruby_ore2" parent="." instance=ExtResource("14_eofdr")]
+position = Vector2(1097, 874)
+script = ExtResource("18_atk2t")
+
+[node name="Gold Ore" parent="." instance=ExtResource("18_qy6rv")]
+position = Vector2(1202, 873)
+script = ExtResource("19_iyj51")
+
+[node name="Gold Ore2" parent="." instance=ExtResource("18_qy6rv")]
+position = Vector2(1337, 873)
+script = ExtResource("20_ic3k8")
+
+[node name="Gold Ore3" parent="." instance=ExtResource("18_qy6rv")]
+position = Vector2(1475, 873)
+script = ExtResource("21_rvypw")
+
+[node name="Gold Ore4" parent="." instance=ExtResource("18_qy6rv")]
+position = Vector2(1814, 866)
+script = ExtResource("22_jink6")
 
 [node name="green_fish" parent="." instance=ExtResource("12_vnss0")]
 z_index = 2
@@ -4044,3 +4088,14 @@ shape = SubResource("RectangleShape2D_w0mgs")
 position = Vector2(-1, 0)
 tile_map_data = PackedByteArray("AAD+/ykAAABHABkAAAD+/wsAAABHABkAAAB5ACgAAABHABkAAAB5AAoAAABHABkAAAB5AEYAAABHABkAAAD+/0YAAABHABkAAAA=")
 tile_set = SubResource("TileSet_686pr")
+
+[connection signal="body_entered" from="diamond_ore" to="diamond_ore" method="_on_body_entered"]
+[connection signal="body_entered" from="diamond_ore2" to="diamond_ore2" method="_on_body_entered"]
+[connection signal="body_entered" from="diamond_ore3" to="diamond_ore3" method="_on_body_entered"]
+[connection signal="body_entered" from="diamond_ore4" to="diamond_ore4" method="_on_body_entered"]
+[connection signal="body_entered" from="ruby_ore" to="ruby_ore" method="_on_body_entered"]
+[connection signal="body_entered" from="ruby_ore2" to="ruby_ore2" method="_on_body_entered"]
+[connection signal="body_entered" from="Gold Ore" to="Gold Ore" method="_on_body_entered"]
+[connection signal="body_entered" from="Gold Ore2" to="Gold Ore2" method="_on_body_entered"]
+[connection signal="body_entered" from="Gold Ore3" to="Gold Ore3" method="_on_body_entered"]
+[connection signal="body_entered" from="Gold Ore4" to="Gold Ore4" method="_on_body_entered"]

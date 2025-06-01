@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://co3wjvtuxoqam"]
+
+[ext_resource type="Script" path="res://Scripts/info_5.gd" id="1_75wfh"]
+
+[node name="info5" type="AcceptDialog"]
+disable_3d = true
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(1158, 210)
+visible = true
+transient = false
+ok_button_text = "Continue"
+dialog_text = "
+Most times phishing emails can be easy to detect if you know and look out for certain indicators.
+As Artificial Intelligence has become more available recently, malicious actors are also using it to their advantage to make the indictors less obvious.
+
+For example, there may be less spelling and grammatical mistakes which makes harder for you to detect phishing.
+
+"
+script = ExtResource("1_75wfh")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

@@ -1,6 +1,6 @@
 extends Area2D
 
-func _on_body_entered(body: CharacterBody2D): # body -> characterbody2D
+func _on_body_entered(_body : CharacterBody2D):
 	
 	global.player_position = global_position
 	print(global.player_position)
@@ -8,7 +8,7 @@ func _on_body_entered(body: CharacterBody2D): # body -> characterbody2D
 	print(global.ores_collected)
 	queue_free()
 
-	SceneSwitcher.goto_scene("res://scenes/info2.tscn")
+	SceneSwitcher.goto_scene("res://scenes/educational_content/info_7.tscn")
 
 # keeps colliding in the same spot which means it loops back
 # SceneSwitcher creates a new instance of the scene in question and there the diamond node may still be there

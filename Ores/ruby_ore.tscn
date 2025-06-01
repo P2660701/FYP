@@ -1,21 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://coksgsheiikxh"]
+[gd_scene load_steps=3 format=3 uid="uid://coksgsheiikxh"]
 
-[ext_resource type="Script" path="res://Ores/ruby_ore.gd" id="1_26pqu"]
 [ext_resource type="Texture2D" uid="uid://basbp0jwgqyrm" path="res://assets/ore-amp-minerals/pngs/rubies.png" id="1_ty6io"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eddoj"]
 radius = 14.8071
 
 [node name="ruby_ore" type="Area2D"]
-script = ExtResource("1_26pqu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(254.5, 127)
+position = Vector2(-1.2029, -0.702896)
 shape = SubResource("CircleShape2D_eddoj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(254, 125)
+position = Vector2(-1.7029, -2.7029)
 scale = Vector2(0.0675668, 0.0675668)
 texture = ExtResource("1_ty6io")
-
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]

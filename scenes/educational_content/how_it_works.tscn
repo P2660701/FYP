@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://oj2a7fq7kk7r"]
+
+[ext_resource type="Script" path="res://Scripts/how_it_works.gd" id="1_h4pla"]
+
+[node name="how_it_works" type="AcceptDialog"]
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(1227, 236)
+visible = true
+ok_button_text = "Continue"
+dialog_text = "
+Every email goes through advanced filters that eliminate most malicious ones before they ever enter your inbox. 
+These filters are always improving.
+
+Sometimes a few are missed which is what you see. "
+script = ExtResource("1_h4pla")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

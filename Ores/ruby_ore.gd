@@ -2,7 +2,12 @@ extends Area2D
 
 #@onready var body = $Player as CharacterBody2D
 
-func _on_body_entered(body):
-	if body.name == "Player":
-		queue_free()
+func _on_body_entered(body: CharacterBody2D):
 	
+	global.player_position = global_position
+	print(global.player_position)
+	global.ores_collected += 1
+	print(global.ores_collected)
+	queue_free()
+	
+	SceneSwitcher.goto_scene("res://scenes/educational_content/info_6.tscn")

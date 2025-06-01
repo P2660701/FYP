@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1yhmnkatji4u"]
+
+[ext_resource type="Script" path="res://Scripts/reporting.gd" id="1_ovq8c"]
+
+[node name="AcceptDialog" type="AcceptDialog"]
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(1180, 210)
+visible = true
+transient = false
+ok_button_text = "Continue"
+dialog_text = "How does reporting phishing help?
+
+It means security specialists can investigate and inform others that it may be malicious to bring awareness and decrease the threat.
+
+Reporting helps experts to combat the issue by alerting other users and spread awareness to other organisations so it becomes a widely known threat.
+
+"
+dialog_close_on_escape = false
+script = ExtResource("1_ovq8c")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

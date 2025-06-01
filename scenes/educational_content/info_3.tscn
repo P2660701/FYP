@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ur2j2w5c44fk"]
 
-[ext_resource type="Script" path="res://info_3.gd" id="1_81ow6"]
+[ext_resource type="Script" path="res://Scripts/info_3.gd" id="1_h345j"]
 
 [node name="info3" type="AcceptDialog"]
 disable_3d = true
@@ -9,7 +9,6 @@ title = "You collected an ore!"
 initial_position = 1
 size = Vector2i(1078, 314)
 visible = true
-transient = false
 ok_button_text = "Continue"
 dialog_text = "
 Example phishing scenarios
@@ -18,12 +17,12 @@ Example phishing scenarios
 'guaranteed' high returns on your pension savings.
 
 2. An email coming from 'your' Life Insurance company could claim that you need to urgently review your policy,
-attaching a link where you suddenly need to enter more personal details than you usually would when youlog into your account 3rd party 
+attaching a link where you suddenly need to enter more personal details than you usually would.
 
 
 "
 dialog_close_on_escape = false
-script = ExtResource("1_81ow6")
+script = ExtResource("1_h345j")
 
 [connection signal="canceled" from="." to="." method="_on_canceled"]
 [connection signal="confirmed" from="." to="." method="_on_confirmed"]

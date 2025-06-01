@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://djs7x20aaywrn"]
+
+[ext_resource type="PackedScene" uid="uid://blqninp5023y1" path="res://scenes/educational_content/educational_content.tscn" id="1_ivl5o"]
+
+[node name="Info2" instance=ExtResource("1_ivl5o")]
+size = Vector2i(1214, 288)
+dialog_text = "What could be indicators of phishing:
+
+- If the message is unsolicited
+- If it seems generically addressed
+- If any personal data is requested or supposed to be filled in through a link
+- If it is claims to come from a trusted person or organisation (especially from an unusual email address) .
+
+
+"

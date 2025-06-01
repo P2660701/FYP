@@ -27,14 +27,15 @@ extends Area2D
 ## script attached to the scene root
 
 
-func _on_body_entered(body: CharacterBody2D): # body -> characterbody2D
+func _on_body_entered(_body: CharacterBody2D):
 	
 	global.player_position = global_position
 	print(global.player_position)
 	global.ores_collected += 1
 	print(global.ores_collected)
 	queue_free()
-	SceneSwitcher.goto_scene("res://scenes/educational_content.tscn")
+	
+	SceneSwitcher.goto_scene("res://scenes/educational_content/educational_content.tscn")
 
 
 # SceneSwitcher creates a new instance of the scene in question and there the diamond node may still be there

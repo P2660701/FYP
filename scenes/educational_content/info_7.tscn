@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://dam4f8gopfhkx"]
+
+[ext_resource type="Script" path="res://Scripts/info_7.gd" id="1_28d8r"]
+
+[node name="info7" type="AcceptDialog"]
+title = "You collected an ore!"
+initial_position = 1
+size = Vector2i(548, 210)
+visible = true
+transient = false
+ok_button_text = "Continue"
+dialog_text = "What are the motivations behind phishing?
+
+Most of the time it is because criminals want to make financial gains.
+
+- It is TOTALLY wrong and ILLEGAL.
+"
+dialog_close_on_escape = false
+script = ExtResource("1_28d8r")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]
