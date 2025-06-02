@@ -7,17 +7,17 @@ transparent_bg = true
 mode = 3
 title = "Scenario"
 initial_position = 1
-size = Vector2i(1512, 288)
+size = Vector2i(1522, 288)
 visible = true
 transparent = true
 dialog_text = "
-You have been invited to a tour of the local technology research and development lab s part of an initiative to increase participation amongst older adults with new emerging digital technologies.
+You have been invited to tour the local technology research and development lab as part of an initiative to increase participation with new digital technologies amongst older adults.
 
 After the tour ends, you have some independent time to explore some rooms that weren’t featured on the guided tour, when an announcement is made over the intercom.
 
 “Every visitor must leave the premises immediately due to an emerging incident.”
 
-Now you must navigate your way out"
+Now you must navigate your way out!"
 dialog_close_on_escape = false
 script = ExtResource("1_wp4ep")
 

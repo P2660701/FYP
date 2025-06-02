@@ -1,7 +1,7 @@
 [gd_scene load_steps=75 format=3 uid="uid://gerl3s4kqsvj"]
 
 [ext_resource type="Texture2D" uid="uid://qqucjxh762m4" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_000.png" id="1_1ihgq"]
-[ext_resource type="Script" path="res://Enemies/green_fish.gd" id="1_xo0am"]
+[ext_resource type="Script" path="res://Enemies/fish_movement.gd" id="1_xello"]
 [ext_resource type="Texture2D" uid="uid://cgic2l67gjt0h" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_001.png" id="2_t0ryc"]
 [ext_resource type="Texture2D" uid="uid://b2ye4445wvt0a" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_idle_deflated_000.png" id="2_voj2m"]
 [ext_resource type="Texture2D" uid="uid://bntfthpafjw26" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflated_idle_002.png" id="3_jpxqu"]
@@ -66,9 +66,11 @@
 [ext_resource type="Texture2D" uid="uid://cq7c0a6njpdem" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflate_004.png" id="56_cdu18"]
 [ext_resource type="Texture2D" uid="uid://cf5753uvcjuq1" path="res://assets/puffer-fish-game-sprite/keyframes/green/__green_puffer_fish_inflate_005.png" id="57_ei3rp"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8jfex"]
-radius = 5.7179
-height = 21.0659
+[sub_resource type="Curve2D" id="Curve2D_fqure"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 50, 1, 0, 0, 0, 0, 1919, 1)
+}
+point_count = 2
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3yc23"]
 animations = [{
@@ -297,7 +299,7 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -309,7 +311,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -325,7 +327,7 @@ step = 0.1667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -337,7 +339,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -355,7 +357,7 @@ step = 0.1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -367,7 +369,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -384,7 +386,7 @@ step = 0.125
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -396,7 +398,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -412,7 +414,7 @@ step = 0.1667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -424,7 +426,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -439,7 +441,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/path = NodePath("../PathFollow2D/AnimatedSprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -451,7 +453,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/path = NodePath("../PathFollow2D/AnimatedSprite2D:animation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -471,25 +473,25 @@ _data = {
 "RESET": SubResource("Animation_pb8og")
 }
 
-[node name="green_fish" type="AnimatableBody2D"]
-position = Vector2(330, 281)
-script = ExtResource("1_xo0am")
+[node name="Path2D" type="Path2D"]
+curve = SubResource("Curve2D_fqure")
 metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-rotation = -1.57079
-scale = Vector2(3.3229, 3.3229)
-shape = SubResource("CapsuleShape2D_8jfex")
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2(50, 1)
+script = ExtResource("1_xello")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(3, -3)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="PathFollow2D"]
+position = Vector2(-53, -6)
 scale = Vector2(0.154574, 0.154574)
 sprite_frames = SubResource("SpriteFrames_3yc23")
 animation = &"Deflated Swim"
-frame = 1
+frame = 2
+flip_h = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PathFollow2D/AnimatedSprite2D"]
+root_node = NodePath("")
 libraries = {
 "": SubResource("AnimationLibrary_it4yx")
 }

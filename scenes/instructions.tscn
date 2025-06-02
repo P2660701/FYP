@@ -1,9 +1,28 @@
-[gd_scene format=3 uid="uid://dfbd2xvww4u24"]
+[gd_scene load_steps=2 format=3 uid="uid://dfbd2xvww4u24"]
+
+[ext_resource type="Script" path="res://Scripts/instructions.gd" id="1_swsnp"]
 
 [node name="instructions" type="AcceptDialog"]
 disable_3d = true
 transparent_bg = true
 title = "Instructions"
 initial_position = 1
+size = Vector2i(745, 340)
 visible = true
 transparent = true
+dialog_text = "
+To move through the level, use the arrow keypad at the side of the keyboard. 
+For left-handed users, 'A' and 'D' can be used to move left or right instead.
+
+To run, press SHIFT at the same time with the left or right key.
+
+To jump, press the SPACE bar
+
+Your aim is to collect all 10 ores and find the door to exit out the lab.
+
+Good Luck!"
+dialog_close_on_escape = false
+script = ExtResource("1_swsnp")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]
