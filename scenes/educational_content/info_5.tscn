@@ -11,7 +11,7 @@ visible = true
 transient = false
 ok_button_text = "Continue"
 dialog_text = "
-Most times phishing emails can be easy to detect if you know and look out for certain indicators.
+Most times phishing emails can be easy to detect if you can look out for some of common features.
 As Artificial Intelligence has become more available recently, malicious actors are also using it to their advantage to make the indictors less obvious.
 
 For example, there may be less spelling and grammatical mistakes which makes harder for you to detect phishing.

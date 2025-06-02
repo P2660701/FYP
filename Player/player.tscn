@@ -572,5 +572,3 @@ limit_bottom = 1020
 limit_smoothed = true
 position_smoothing_speed = 10.0
 drag_horizontal_enabled = true
-drag_left_margin = 0.6
-drag_right_margin = 0.6

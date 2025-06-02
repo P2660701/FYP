@@ -4015,13 +4015,21 @@ texture = ExtResource("7_vnih0")
 [node name="Main floor" type="TileMapLayer" parent="."]
 z_index = 1
 position = Vector2(-165, 881)
-tile_map_data = PackedByteArray("AAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAABMAAEAAAAcABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAABwAAEAAAAcABkAAACKAAEAAAAcABkAAACTAAEAAAAcABkAAACcAAEAAAAcABkAAAClAAEAAAAcABkAAACuAAEAAAAcABkAAAC3AAEAAAAcABkAAADAAAEAAAAcABkAAADJAAEAAAAcABkAAADSAAEAAAAcABkAAADbAAEAAAAcABkAAADkAAEAAAAcABkAAADtAAEAAAAcABkAAAD2AAEAAAAcABkAAAD/AAEAAAAcABkAAAAIAQEAAAAcABkAAAARAQEAAAAcABkAAAAaAQEAAAAcABkAAAAjAQEAAAAcABkAAAAsAQEAAAAcABkAAAA1AQEAAAAcABkAAAA+AQEAAAAcABkAAABHAQEAAAAcABkAAABQAQEAAAAcABkAAABZAQEAAAAcABkAAABiAQEAAAAcABkAAABrAQEAAAAcABkAAAANAAEAAAAcABkAAAA5AP//AAArABEAAAA+APz/AAAMAAEAAAA/APz/AAAMAAEAAABAAPz/AAAMAAEAAABBAPz/AAAMAAEAAABCAPz/AAAMAAEAAABDAPz/AAAMAAEAAABEAPz/AAAMAAEAAABFAPz/AAAMAAEAAABGAPz/AAAMAAEAAABHAPz/AAAMAAEAAABIAPz/AAAMAAEAAABJAPz/AAAMAAEAAAA=")
+tile_map_data = PackedByteArray("AAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAACBAAEAAAAcABkAAABwAAEAAAAcABkAAAClAAEAAAAcABkAAACuAAEAAAAcABkAAAC3AAEAAAAcABkAAADAAAEAAAAcABkAAADJAAEAAAAcABkAAADSAAEAAAAcABkAAADbAAEAAAAcABkAAADkAAEAAAAcABkAAADtAAEAAAAcABkAAAD2AAEAAAAcABkAAAD/AAEAAAAcABkAAAAIAQEAAAAcABkAAAARAQEAAAAcABkAAAAaAQEAAAAcABkAAAAjAQEAAAAcABkAAAAsAQEAAAAcABkAAAA1AQEAAAAcABkAAAA+AQEAAAAcABkAAABHAQEAAAAcABkAAABQAQEAAAAcABkAAABZAQEAAAAcABkAAABiAQEAAAAcABkAAABrAQEAAAAcABkAAAANAAEAAAAcABkAAAA5AP//AAArABEAAAA+APz/AAAMAAEAAAA/APz/AAAMAAEAAABAAPz/AAAMAAEAAABBAPz/AAAMAAEAAABCAPz/AAAMAAEAAABDAPz/AAAMAAEAAABEAPz/AAAMAAEAAABFAPz/AAAMAAEAAABGAPz/AAAMAAEAAABHAPz/AAAMAAEAAABIAPz/AAAMAAEAAABJAPz/AAAMAAEAAABNAP//AAA1ABEAAACTAAEAAAALABcAAACcAAEAAAALABYAAACJAAEAAAAcABkAAACOAAEAAAAgAAsAAACPAAIAAAAgAAsAAACbAAEAAAALABcAAAA=")
 tile_set = ExtResource("8_7j5h4")
 
-[node name="Level builder" type="TileMapLayer" parent="."]
+[node name="Lights" type="TileMapLayer" parent="."]
 z_index = 1
-position = Vector2(-67, 1117)
-tile_map_data = PackedByteArray("AAAMAAEAAAAcABkAAAAVAAEAAAAcABkAAAAeAAEAAAAcABkAAAAnAAEAAAAcABkAAAAwAAEAAAAcABkAAAA6AAEAAAAcABkAAABDAAEAAAAcABkAAABMAAEAAAAcABkAAAA2AAIAAABJABkAAAA1AAEAAABJABkAAAA2AAEAAABJABkAAABVAAEAAAAcABkAAABeAAEAAAAcABkAAABnAAEAAAAcABkAAAB5AAEAAAAcABkAAAA=")
+position = Vector2(280, 160)
+scale = Vector2(4.31376, 4.31376)
+tile_map_data = PackedByteArray("AAAAAAAAAQAxACMAAAANAAAAAQAxACMAAAAZAAAAAQAxACMAAAAiAAAAAQAxACMAAAAtAAAAAQAxACMAAAA4AAAAAQAxACMAAABDAAAAAQAxACMAAABQAAAAAQAxACMAAABdAAAAAQAxACMAAABoAAAAAQAxACMAAAA=")
+tile_set = ExtResource("8_7j5h4")
+
+[node name="Level Builder" type="TileMapLayer" parent="."]
+z_index = 1
+position = Vector2(4056, 776)
+scale = Vector2(2.1764, 2.1764)
+tile_map_data = PackedByteArray("AAAAAAAAAQAiABwAAAA=")
 tile_set = ExtResource("8_7j5h4")
 
 [node name="Player" parent="." instance=ExtResource("9_pc7jx")]
@@ -4032,15 +4040,16 @@ position = Vector2(400, 873)
 script = ExtResource("11_hyt5q")
 
 [node name="diamond_ore2" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(1656, 871)
+position = Vector2(1600, 873)
 script = ExtResource("11_ejnnp")
 
 [node name="diamond_ore3" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(2201, 873)
+z_index = 1
+position = Vector2(2300, 810)
 script = ExtResource("13_s66gh")
 
 [node name="diamond_ore4" parent="." instance=ExtResource("10_w758v")]
-position = Vector2(2656, 867)
+position = Vector2(2656, 873)
 script = ExtResource("19_svw8w")
 
 [node name="ruby_ore" parent="." instance=ExtResource("14_eofdr")]
@@ -4052,24 +4061,28 @@ position = Vector2(3432, 873)
 script = ExtResource("18_atk2t")
 
 [node name="Gold Ore" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(3848, 867)
+position = Vector2(3848, 873)
 script = ExtResource("19_iyj51")
 
 [node name="Gold Ore2" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(4280, 869)
+position = Vector2(4280, 873)
 script = ExtResource("20_ic3k8")
 
 [node name="Gold Ore3" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(4644, 866)
+position = Vector2(4644, 873)
 script = ExtResource("21_rvypw")
 
 [node name="Gold Ore4" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(5067, 870)
+position = Vector2(5067, 873)
 script = ExtResource("22_jink6")
 
 [node name="green_fish" parent="." instance=ExtResource("12_vnss0")]
 z_index = 2
 position = Vector2(1834, 966)
+
+[node name="green_fish2" parent="." instance=ExtResource("12_vnss0")]
+z_index = 2
+position = Vector2(762, 1001)
 
 [node name="Wasps" parent="." instance=ExtResource("13_toasj")]
 position = Vector2(815, 482)

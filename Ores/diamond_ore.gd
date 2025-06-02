@@ -1,28 +1,7 @@
 extends Area2D
-## Collectable ore that disapears and displays education content once touched
-
-
-# @onready var body = $Player as CharacterBody2D
-
-# Called when the node enters the scene tree for the first time.
-#func _ready() -> void:
-#	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-
+## Ore that switches scene to display educational content once collided with
 
 # possibly changes scenes before queue_freeing because the functions defined there are global so it is prioritised
-
-
-	#if body.name == "Player":
-		#get_tree().change_scene_to_file("res://scenes/educational_content.tscn") #scene tree class manages the main game loop
-	#	get_tree().paused
-		
-		
-	#save_game()
-	# deletes the node at the end of the current frame might be safer to remove_child instead
 
 ## script attached to the scene root
 
