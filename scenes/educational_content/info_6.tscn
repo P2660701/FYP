@@ -10,7 +10,7 @@ visible = true
 transient = false
 ok_button_text = "Continue"
 dialog_text = "
-AI works by having lots of information being fed into a tool/computer function/ set of rules. 
+AI works by having lots of information being fed into a tool with a set of rules. 
 
 Over time, the set of rules is trained on what information to give back. 
 

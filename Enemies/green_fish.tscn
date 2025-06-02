@@ -486,8 +486,8 @@ script = ExtResource("1_xello")
 position = Vector2(-53, -6)
 scale = Vector2(0.154574, 0.154574)
 sprite_frames = SubResource("SpriteFrames_3yc23")
-animation = &"Deflated Swim"
-frame = 2
+animation = &"Swim"
+autoplay = "Swim"
 flip_h = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="PathFollow2D/AnimatedSprite2D"]
