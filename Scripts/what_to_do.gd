@@ -1,4 +1,6 @@
-extends AcceptDialog
+extends AcceptDialog	
+
+## transitions back to the main level scene
 
 func _on_confirmed():
 	SceneSwitcher.goto_scene("res://scenes/Level.tscn")

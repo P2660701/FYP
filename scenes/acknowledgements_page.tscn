@@ -4,12 +4,23 @@
 
 [node name="Acknowledgements page" type="AcceptDialog"]
 title = "Acknowledgements"
-initial_position = 2
-size = Vector2i(368, 132)
+initial_position = 1
+size = Vector2i(1600, 418)
 visible = true
 ok_button_text = "Close"
-dialog_text = "*filled in closer to the time*
-*Same as the one that features in the report*
+dialog_text = "
+Foremost, I would like to thank Sarah De’Ath for her supervision and guidance throughout the project, especially when tasks felt difficult.
+
+Many thanks to Sheriff Oyekanmi, for his help when I was troubleshooting issues with the game engine responding to any input.
+
+Thanks to my former manager during my Placement Year, Gary Simpson for his insight into emerging areas for cyber threats on older individuals. 
+My thanks also to Nick Ayres within the CTI department for providing me with his advice on cyber education topics to focus on.
+
+I would like to give special thanks to Jethro Shell in the games department for making time to meet with me to help me understand the fundamentals of game design and production. 
+My thanks to Conor Fahy and Nasar Hasshu from the games department for answering my questions on where to find game art resources.
+
+Thank you to Tony Kenyon and Graeme Stuart who guest lectured at the university this year. I was grateful receive their opinions on current cyber security threats to the public.
+
 
 "
 script = ExtResource("1_ae052")

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/reporting.gd" id="1_ovq8c"]
 
-[node name="AcceptDialog" type="AcceptDialog"]
+[node name="reporting" type="AcceptDialog"]
 title = "You collected an ore!"
 initial_position = 1
 size = Vector2i(1269, 236)

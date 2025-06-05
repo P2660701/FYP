@@ -29,18 +29,6 @@ expand_icon = true
 script = ExtResource("2_k2lv8")
 metadata/_edit_group_ = true
 
-[node name="TextureRect" type="ColorRect" parent="Acknowledgements"]
-show_behind_parent = true
-clip_contents = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.997212, 0.979141)
-color = Color(0.153106, 0.0487619, 0.028938, 1)
-
 [node name="Start" type="Button" parent="."]
 z_index = 3
 anchors_preset = 7
@@ -61,17 +49,6 @@ icon_alignment = 1
 expand_icon = true
 script = ExtResource("2_vagyx")
 
-[node name="ColorRect" type="ColorRect" parent="Start"]
-show_behind_parent = true
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(0.991709, 1.00766)
-color = Color(0.153106, 0.0487619, 0.028938, 1)
-
 [node name="Sprite2D" type="ParallaxBackground" parent="."]
 
 [node name="Background" type="Sprite2D" parent="Sprite2D"]
@@ -80,9 +57,9 @@ scale = Vector2(1.38108, 1.42963)
 texture = ExtResource("1_4b7nf")
 metadata/_edit_lock_ = true
 
-[node name="Title" type="Sprite2D" parent="."]
-position = Vector2(984, 300)
-scale = Vector2(1.47149, 1.47316)
+[node name="Title" type="Sprite2D" parent="Sprite2D/Background"]
+position = Vector2(1.44818, -325.958)
+scale = Vector2(1.06546, 1.03045)
 texture = ExtResource("4_7xa8c")
 
 [connection signal="pressed" from="Acknowledgements" to="Acknowledgements" method="_on_pressed"]
