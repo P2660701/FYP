@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://be6ggn5sgy7js"]
+
+[ext_resource type="Script" path="res://Scripts/end.gd" id="1_gitlr"]
+
+[node name="End" type="AcceptDialog"]
+title = "Congratulations"
+initial_position = 1
+size = Vector2i(973, 210)
+visible = true
+ok_button_text = "Done"
+dialog_text = "
+You have managed to escape out the lab! Turns out the incident was a false alarm this time.
+
+Now you should know more about how AI enabled phishing attacks work and what to do if you encounter a malicious email.
+
+Thank you for playing"
+script = ExtResource("1_gitlr")
+
+[connection signal="canceled" from="." to="." method="_on_canceled"]
+[connection signal="confirmed" from="." to="." method="_on_confirmed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://2rju0bscd8ed"]
+[gd_scene load_steps=32 format=4 uid="uid://2rju0bscd8ed"]
 
 [ext_resource type="Texture2D" uid="uid://d2bnlwd57puwd" path="res://tileset.png" id="1_2koh0"]
 [ext_resource type="Texture2D" uid="uid://csm8ucwufoovs" path="res://factory creation pack.png" id="2_tkxod"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://78yjycr7pr50" path="res://pngs/background_creation_items/pìpe_background.png" id="6_paqr5"]
 [ext_resource type="Texture2D" uid="uid://cydg63ixrjurd" path="res://pngs/background_creation_items/cover_background.png" id="7_vnih0"]
 [ext_resource type="TileSet" uid="uid://b2bemw2wgbegb" path="res://backgrounds.tres" id="8_7j5h4"]
+[ext_resource type="Script" path="res://scenes/door.gd" id="9_2urt7"]
 [ext_resource type="PackedScene" uid="uid://86ixudnff068" path="res://Player/player.tscn" id="9_pc7jx"]
 [ext_resource type="PackedScene" uid="uid://c7oufrl5gwpta" path="res://Ores/diamond_ore.tscn" id="10_w758v"]
 [ext_resource type="Script" path="res://Ores/diamond_ore2.gd" id="11_ejnnp"]
@@ -3958,6 +3959,9 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_28p8x")
 sources/0 = SubResource("TileSetAtlasSource_uxm6q")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_65fpo"]
+size = Vector2(58.8125, 66.1637)
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vks0e"]
 texture = ExtResource("1_2koh0")
 71:25/size_in_atlas = Vector2i(3, 30)
@@ -4033,11 +4037,17 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAiABwAAAC0//f/AQAAABwAAADA//T/AQAPADI
 tile_set = ExtResource("8_7j5h4")
 
 [node name="Door" type="TileMapLayer" parent="."]
-z_index = 1
 position = Vector2(5432, 432)
 scale = Vector2(2.17642, 2.17642)
 tile_map_data = PackedByteArray("AAD//wAAAQAqAAUAAAA=")
 tile_set = ExtResource("8_7j5h4")
+script = ExtResource("9_2urt7")
+
+[node name="Area2D" type="Area2D" parent="Door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Area2D"]
+position = Vector2(-7.35156, 14.703)
+shape = SubResource("RectangleShape2D_65fpo")
 
 [node name="Platforms" type="TileMapLayer" parent="."]
 position = Vector2(2680, 696)
@@ -4086,11 +4096,11 @@ position = Vector2(4360, 400)
 script = ExtResource("19_iyj51")
 
 [node name="Gold Ore2" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(3832, 390)
+position = Vector2(3832, 360)
 script = ExtResource("20_ic3k8")
 
 [node name="Gold Ore3" parent="." instance=ExtResource("18_qy6rv")]
-position = Vector2(5176, 523)
+position = Vector2(5176, 300)
 script = ExtResource("21_rvypw")
 
 [node name="Gold Ore4" parent="." instance=ExtResource("18_qy6rv")]
