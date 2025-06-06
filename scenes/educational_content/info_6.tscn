@@ -11,10 +11,9 @@ transient = false
 ok_button_text = "Continue"
 dialog_text = "
 AI works by having lots of information being fed into a tool with a set of rules. 
-
 Over time, the set of rules is trained on what information to give back. 
 
-Similar to a database, when you request for information it can search through and pick out something that might be relevant. 
+Similar to a database, when you put in a request for information, it can search through and pick out something that might be relevant. 
 
 It is important to note that AI is not always accurate."
 dialog_close_on_escape = false

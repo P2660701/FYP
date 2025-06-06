@@ -14,7 +14,7 @@ How does reporting phishing help?
 
 Reporting helps security experts to combat the issue by alerting other users and spreading awareness to other organisations so it becomes a widely known threat.
 
-Afterwards, it can be built in to security detection systems so the future threat is decreased.
+Afterwards, it can be built into security detection systems so the future threat is decreased.
 "
 dialog_close_on_escape = false
 script = ExtResource("1_ovq8c")

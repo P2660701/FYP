@@ -4041,9 +4041,9 @@ position = Vector2(5432, 432)
 scale = Vector2(2.17642, 2.17642)
 tile_map_data = PackedByteArray("AAD//wAAAQAqAAUAAAA=")
 tile_set = ExtResource("8_7j5h4")
-script = ExtResource("9_2urt7")
 
 [node name="Area2D" type="Area2D" parent="Door"]
+script = ExtResource("9_2urt7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Area2D"]
 position = Vector2(-7.35156, 14.703)
@@ -4157,6 +4157,7 @@ position = Vector2(5786, -42)
 tile_map_data = PackedByteArray("AAD+/ykAAABHABkAAAD+/wsAAABHABkAAAB5ACgAAABHABkAAAB5AAoAAABHABkAAAB5AEYAAABHABkAAAD+/0YAAABHABkAAAA=")
 tile_set = SubResource("TileSet_686pr")
 
+[connection signal="body_entered" from="Door/Area2D" to="Door/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="diamond_ore" to="diamond_ore" method="_on_body_entered"]
 [connection signal="body_entered" from="diamond_ore2" to="diamond_ore2" method="_on_body_entered"]
 [connection signal="body_entered" from="diamond_ore3" to="diamond_ore3" method="_on_body_entered"]

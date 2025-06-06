@@ -6,19 +6,19 @@
 disable_3d = true
 title = "You collected an ore!"
 initial_position = 1
-size = Vector2i(1203, 340)
+size = Vector2i(1000, 340)
 visible = true
 transient = false
 ok_button_text = "Continue"
 dialog_text = "
-What to do if you see or interact with phishing email?
+What to do if you see or interact with a phishing email?
 
 Report it immediately!
 
 Emails can be forwarded to report@phishing.gov.uk.
 ActionFraud also give advice on the website https://wwww.actionfraud.police.uk/report-phishing
 
-You can contact the legitimate organisation through the established channels like their website or phone number. 
+You can contact the legitimate organisation through the established channels via their website or phone number. 
 They may also have a page for reporting.
 
 "

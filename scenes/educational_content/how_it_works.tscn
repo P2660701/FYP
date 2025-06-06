@@ -5,14 +5,14 @@
 [node name="how_it_works" type="AcceptDialog"]
 title = "You collected an ore!"
 initial_position = 1
-size = Vector2i(1227, 236)
+size = Vector2i(1000, 236)
 visible = true
 ok_button_text = "Continue"
 dialog_text = "
 Every email goes through advanced filters that eliminate most malicious ones before they ever enter your inbox. 
 
 These filters are always improving.
-The few missed are what you see. "
+What you see are the few that are missed. "
 script = ExtResource("1_h4pla")
 
 [connection signal="canceled" from="." to="." method="_on_canceled"]
